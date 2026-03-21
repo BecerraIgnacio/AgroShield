@@ -1,0 +1,11 @@
+{
+  "name": "agroshield-site",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "capture": "node screenshot.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
