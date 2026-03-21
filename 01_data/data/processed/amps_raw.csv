@@ -1,0 +1,531 @@
+id,sequence,length,source_db,target_organisms,activity,mic_um
+AMP_REAL_001,GIGKFLHSAKKFGKAFVGEIMNS,23,APD3,Escherichia coli;Staphylococcus aureus,antibacterial,4.0
+AMP_REAL_002,ITSISLCTPGCKTGALMGCNMKTATCHCSIHVSK,34,APD3,Lactobacillus;Listeria monocytogenes,antibacterial,0.1
+AMP_REAL_003,KWCLLSHERGCTCSDTCRNKCLRSGYCHGFCA,32,DRAMP,Fusarium oxysporum;Botrytis cinerea,antifungal,8.0
+AMP_REAL_004,GLFDIVKKVVGALGSL,16,APD3,Escherichia coli;Pseudomonas aeruginosa,antibacterial,12.5
+AMP_REAL_005,RLCRIVVIRVCR,12,DRAMP,Candida albicans;Fusarium oxysporum,antifungal,6.25
+AMP_REAL_006,GIGAVLKVLTTGLPALISWIKRKRQQ,26,APD3,Staphylococcus aureus;Bacillus subtilis,antibacterial,2.0
+AMP_REAL_007,GRFKRFRKKFKKLFKKLS,18,DRAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,3.0
+AMP_REAL_008,KTTKSKKKVTTKTKSIKK,18,DRAMP,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,16.0
+AMP_REAL_009,FKCRRWQWRMKKLGAPSITCVRRAF,25,APD3,Botrytis cinerea;Magnaporthe oryzae,antifungal,5.0
+AMP_REAL_010,ILGPVLGLVSDTLDDVLGIL,20,APD3,Escherichia coli;Pseudomonas syringae,antibacterial,25.0
+AMP_REAL_011,QKCLNPESKAIKNAGCKYCGNTGHCLN,27,DRAMP,Fusarium oxysporum;Puccinia graminis,antifungal,10.0
+AMP_REAL_012,RTCENLADKYRGPCFTDGSCDDHCKNKAHLISGTCHNWKCFCTQNC,46,APD3,Botrytis cinerea;Fusarium oxysporum;Magnaporthe oryzae,antifungal,2.5
+AMP_REAL_013,KWKLFKKIPKFLHLAKKF,18,DRAMP,Xanthomonas campestris;Ralstonia solanacearum,antibacterial,4.0
+AMP_REAL_014,GLLCYCRKGHCKRGERVRQTCDVICGKPFC,30,DRAMP,Botrytis cinerea;Fusarium oxysporum,antifungal,7.5
+AMP_REAL_015,RKKWFW,6,APD3,Staphylococcus aureus;Pseudomonas syringae,antibacterial,32.0
+AMP_REAL_016,SQSRESQCGASCKFVCKYEHSSGYRCSASVKCRKDCHQC,39,DRAMP,Magnaporthe oryzae;Puccinia graminis,antifungal,3.5
+AMP_REAL_017,FLGALFKALSKLL,13,APD3,Pseudomonas syringae;Xanthomonas campestris,antibacterial,6.0
+AMP_REAL_018,GKWMKLLKKILK,12,DRAMP,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,8.0
+AMP_REAL_019,RCICTTRTCRFPYRPCFCDRRI,22,APD3,Fusarium oxysporum;Botrytis cinerea;Magnaporthe oryzae,antifungal,4.5
+AMP_REAL_020,VKLCEKISGGCVTDANCGQPKCCDA,25,DRAMP,Fusarium oxysporum;Puccinia graminis,antifungal,6.0
+AMP_SYN_0001,NAGFRPVCKAFKAFNLFLSASP,22,UniProt,Botrytis cinerea;Verticillium dahliae,antifungal,12.25
+AMP_SYN_0002,CTLSRLYILSMTL,13,UniProt,Xanthomonas campestris;Pseudomonas syringae;Verticillium dahliae,broad-spectrum,8.7
+AMP_SYN_0003,GNIIFGWNLERDIYNLPTRFAGGFWV,26,APD3,Rhizoctonia solani;Magnaporthe oryzae;Phytophthora infestans,antifungal,10.32
+AMP_SYN_0004,GLGLVIFYKCACMSKAIYLWTAQPLGN,27,APD3,Ralstonia solanacearum,antibacterial,12.71
+AMP_SYN_0005,KCMTKFIDWV,10,dbAMP,Fusarium oxysporum;Botrytis cinerea,antifungal,44.56
+AMP_SYN_0006,VSGAVWCKARRC,12,APD3,Colletotrichum gloeosporioides;Sclerotinia sclerotiorum,antifungal,25.84
+AMP_SYN_0007,WRPQIPIVKGAALLAQAAAGK,21,UniProt,Verticillium dahliae,antifungal,23.81
+AMP_SYN_0008,GKICNHITANNAQSCEL,17,UniProt,Puccinia graminis;Botrytis cinerea,antifungal,13.63
+AMP_SYN_0009,STCNLACRGIKTVDAIVRG,19,dbAMP,Rhizoctonia solani;Magnaporthe oryzae;Puccinia graminis,antifungal,41.05
+AMP_SYN_0010,FARAGAKVLAKTAA,14,DRAMP,Xanthomonas campestris,antibacterial,22.82
+AMP_SYN_0011,KLLWFQGIPGGRAKYYAFGWVVIDSPL,27,dbAMP,Magnaporthe oryzae;Sclerotinia sclerotiorum;Xanthomonas campestris;Botrytis cinerea,broad-spectrum,19.67
+AMP_SYN_0012,CCLGLQFNGKVTCKGARNGRLKAAVV,26,APD3,Colletotrichum gloeosporioides;Magnaporthe oryzae;Sclerotinia sclerotiorum,antifungal,16.8
+AMP_SYN_0013,AIWYAHPNHLTYRVGDSEIE,20,DRAMP,Puccinia graminis;Phytophthora infestans;Magnaporthe oryzae,antifungal,45.28
+AMP_SYN_0014,IAKFVHSTFNIGARHKPTGAVGLYALHRK,29,UniProt,Magnaporthe oryzae;Fusarium oxysporum,broad-spectrum,3.73
+AMP_SYN_0015,AVLQRPIANGGTQGGIIGCKWPV,23,APD3,Magnaporthe oryzae;Verticillium dahliae,broad-spectrum,34.77
+AMP_SYN_0016,KLNKKFKVSDCKNG,14,APD3,Pseudomonas syringae;Xanthomonas campestris,antibacterial,67.22
+AMP_SYN_0017,AGKTAIMFPKGNARRCKEWKAG,22,UniProt,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,24.26
+AMP_SYN_0018,SLVRKGGNRLMGAG,14,APD3,Magnaporthe oryzae,antifungal,33.24
+AMP_SYN_0019,FPPAILIFKVLPTRIAHRTWKRLLFFK,27,APD3,Pseudomonas syringae;Erwinia amylovora,antibacterial,7.76
+AMP_SYN_0020,YLVLNCKTEGGKHVGWKSK,19,DRAMP,Pseudomonas syringae;Sclerotinia sclerotiorum;Xanthomonas campestris,broad-spectrum,33.3
+AMP_SYN_0021,RWFADCPLFPRDLRCSWC,18,DRAMP,Sclerotinia sclerotiorum;Verticillium dahliae;Puccinia graminis,antifungal,7.99
+AMP_SYN_0022,LSGPGPSSLALNANA,15,UniProt,Rhizoctonia solani;Magnaporthe oryzae,antifungal,
+AMP_SYN_0023,ELNLVRKSLGGWGKRLPHKGKHGGLVLKEG,30,DRAMP,Rhizoctonia solani;Verticillium dahliae;Colletotrichum gloeosporioides,antifungal,15.4
+AMP_SYN_0024,CFPGLKLKRGPGGCECLRE,19,DRAMP,Verticillium dahliae;Colletotrichum gloeosporioides;Phytophthora infestans,antifungal,17.38
+AMP_SYN_0025,SGIGQCAAGWNRCAGKH,17,UniProt,Botrytis cinerea;Verticillium dahliae,antifungal,54.3
+AMP_SYN_0026,KLPDSWCGLKLMRIVGL,17,dbAMP,Botrytis cinerea;Puccinia graminis;Colletotrichum gloeosporioides,antifungal,13.06
+AMP_SYN_0027,NDEAAKLGFQPKPVRMNWKLNVSA,24,UniProt,Erwinia amylovora;Xanthomonas campestris,antibacterial,27.47
+AMP_SYN_0028,PPWKKCAKGGCWSLWYPGARKN,22,UniProt,Sclerotinia sclerotiorum;Rhizoctonia solani;Botrytis cinerea,antifungal,25.93
+AMP_SYN_0029,HGPTGPGWSLKGGWIKYNLIEIR,23,UniProt,Phytophthora infestans;Botrytis cinerea;Magnaporthe oryzae,broad-spectrum,
+AMP_SYN_0030,VKAMSQGAIFTCWNDWGPIKKKC,23,UniProt,Magnaporthe oryzae;Botrytis cinerea;Phytophthora infestans,antifungal,16.11
+AMP_SYN_0031,HRGAQTLNTKKGRIWTYGITIGKVIYSNDWCWGCTCVACTWA,42,UniProt,Sclerotinia sclerotiorum;Botrytis cinerea;Alternaria solani,antifungal,64.62
+AMP_SYN_0032,WMVKLMFPGFCYRPCDG,17,dbAMP,Phytophthora infestans,antifungal,4.89
+AMP_SYN_0033,IDLLSDCTMGVCKGGA,16,UniProt,Colletotrichum gloeosporioides;Magnaporthe oryzae;Botrytis cinerea,antifungal,46.37
+AMP_SYN_0034,WYGWPKGYTCIHGPA,15,UniProt,Colletotrichum gloeosporioides;Rhizoctonia solani;Fusarium oxysporum;Alternaria solani,broad-spectrum,
+AMP_SYN_0035,SVRFSFEGRRPCCMASAICVGIFR,24,UniProt,Phytophthora infestans;Magnaporthe oryzae;Verticillium dahliae,antifungal,29.95
+AMP_SYN_0036,WGTSKARFPPITLCIGCIRGINIPKMWGL,29,APD3,Magnaporthe oryzae;Sclerotinia sclerotiorum;Ralstonia solanacearum;Xanthomonas campestris,broad-spectrum,5.9
+AMP_SYN_0037,AAYCFLIIWPLLQVNSLWG,19,DRAMP,Verticillium dahliae;Puccinia graminis,broad-spectrum,14.99
+AMP_SYN_0038,YIVNAGWWSCFNWA,14,APD3,Puccinia graminis;Botrytis cinerea;Verticillium dahliae,antifungal,
+AMP_SYN_0039,SFRSLGYYLSCTCHS,15,UniProt,Fusarium oxysporum;Magnaporthe oryzae,antifungal,
+AMP_SYN_0040,LRKRKCKWARTLKWAKIPKVACLAG,25,dbAMP,Erwinia amylovora;Ralstonia solanacearum,antibacterial,11.38
+AMP_SYN_0041,KLCPTNRQFKFHKKCKNIDVASCCRS,26,UniProt,Colletotrichum gloeosporioides;Alternaria solani;Botrytis cinerea,antifungal,17.07
+AMP_SYN_0042,HNRTQWLHLFNFCTIRLSTYSLNA,24,dbAMP,Magnaporthe oryzae;Rhizoctonia solani,broad-spectrum,47.6
+AMP_SYN_0043,VHECNARYCLIKDGG,15,APD3,Magnaporthe oryzae,antifungal,53.11
+AMP_SYN_0044,RACKKLIFKHCPLLGFYAFWR,21,UniProt,Fusarium oxysporum,antifungal,13.31
+AMP_SYN_0045,REIPKSSATAAVTLLQKCAG,20,APD3,Xanthomonas campestris;Ralstonia solanacearum;Verticillium dahliae,broad-spectrum,29.39
+AMP_SYN_0046,KICTRFRANLFRHWNDCGEDR,21,dbAMP,Rhizoctonia solani;Verticillium dahliae;Colletotrichum gloeosporioides,antifungal,10.43
+AMP_SYN_0047,TMDAKGGAKGKASATTLKKLSVKSNGK,27,DRAMP,Ralstonia solanacearum,antibacterial,
+AMP_SYN_0048,KEGKKLDIGIHLSNACPGQNV,21,dbAMP,Ralstonia solanacearum,antibacterial,23.15
+AMP_SYN_0049,WPILWGISSPSRPLNKIIEFWKFCA,25,APD3,Ralstonia solanacearum,antibacterial,19.04
+AMP_SYN_0050,LDEPMVQAIQWLRRFGWRVF,20,UniProt,Colletotrichum gloeosporioides;Magnaporthe oryzae;Ralstonia solanacearum,broad-spectrum,32.04
+AMP_SYN_0051,WSSCGNTLCTTGRGVDKWFKHA,22,DRAMP,Sclerotinia sclerotiorum,antifungal,9.34
+AMP_SYN_0052,IAWTNSCGSPCPKACGSLQLCGGAK,25,DRAMP,Rhizoctonia solani,antifungal,45.84
+AMP_SYN_0053,MLQGAHLEPLIW,12,UniProt,Fusarium oxysporum;Ralstonia solanacearum;Erwinia amylovora;Verticillium dahliae,broad-spectrum,27.19
+AMP_SYN_0054,YGASHRMRRGALSERKP,17,DRAMP,Erwinia amylovora,antibacterial,37.85
+AMP_SYN_0055,GAFAWKYLGREHRTGCI,17,UniProt,Alternaria solani;Magnaporthe oryzae,antifungal,43.35
+AMP_SYN_0056,PISGCKKYEGCGGKQD,16,DRAMP,Alternaria solani;Sclerotinia sclerotiorum;Phytophthora infestans,antifungal,28.6
+AMP_SYN_0057,ANISPWCLRAARIILLPW,18,dbAMP,Colletotrichum gloeosporioides,antifungal,
+AMP_SYN_0058,INGCRKILGGKYGVKCTKVKCPTGHALVTQVNS,33,APD3,Magnaporthe oryzae,antifungal,
+AMP_SYN_0059,SALISLLCGYQLRS,14,UniProt,Erwinia amylovora,antibacterial,11.05
+AMP_SYN_0060,PHVRNEWKVACDDGQHWVTGNLCGLKDW,28,DRAMP,Xanthomonas campestris;Erwinia amylovora,antibacterial,15.16
+AMP_SYN_0061,ANLNRKNKMGW,11,DRAMP,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,43.6
+AMP_SYN_0062,PDIKHCTGYHIRKCGCK,17,APD3,Verticillium dahliae;Sclerotinia sclerotiorum,antifungal,
+AMP_SYN_0063,WVSWQEDYKVKCIKGLAGLTP,21,dbAMP,Magnaporthe oryzae;Phytophthora infestans,antifungal,33.17
+AMP_SYN_0064,RIILFLAKRGYPCYISHWRFKKAC,24,APD3,Magnaporthe oryzae;Colletotrichum gloeosporioides,antifungal,6.94
+AMP_SYN_0065,GLDYRGHSLQGSIPYLSQPAKWRRL,25,APD3,Sclerotinia sclerotiorum;Rhizoctonia solani;Alternaria solani;Ralstonia solanacearum,broad-spectrum,9.25
+AMP_SYN_0066,SGLPEKKIFKLKTQPKLYKIWKLLPT,26,APD3,Erwinia amylovora;Xanthomonas campestris,antibacterial,20.13
+AMP_SYN_0067,GGWYRPPKKLWQGLLVI,17,DRAMP,Fusarium oxysporum;Phytophthora infestans,antifungal,32.26
+AMP_SYN_0068,HKGKFLWPCLLGPLNAI,17,APD3,Fusarium oxysporum;Phytophthora infestans,broad-spectrum,18.0
+AMP_SYN_0069,IWVKFWGNVCLLQWVEVEVYIKWWVVA,27,UniProt,Magnaporthe oryzae;Erwinia amylovora;Sclerotinia sclerotiorum,broad-spectrum,21.86
+AMP_SYN_0070,VCKGSGRNQAHGPFLNIK,18,UniProt,Magnaporthe oryzae,antifungal,10.99
+AMP_SYN_0071,GGGGRWGQANPA,12,dbAMP,Xanthomonas campestris;Ralstonia solanacearum,antibacterial,42.36
+AMP_SYN_0072,IFWKKYIPVRSSR,13,dbAMP,Erwinia amylovora,antibacterial,57.5
+AMP_SYN_0073,ALALKLDGLCFLCK,14,UniProt,Sclerotinia sclerotiorum;Rhizoctonia solani;Fusarium oxysporum,antifungal,39.92
+AMP_SYN_0074,PGAGAFAKPLAVYKGECNRWIVK,23,DRAMP,Colletotrichum gloeosporioides;Magnaporthe oryzae;Alternaria solani,antifungal,15.14
+AMP_SYN_0075,ELLQFAAGPLLSGHGWQCSKR,21,DRAMP,Erwinia amylovora,antibacterial,
+AMP_SYN_0076,GAKLRRCYFVLLRSGVYLIGLLREP,25,UniProt,Sclerotinia sclerotiorum;Ralstonia solanacearum;Phytophthora infestans;Puccinia graminis,broad-spectrum,18.69
+AMP_SYN_0077,IGELGFTCKAIKLIGGC,17,UniProt,Puccinia graminis;Fusarium oxysporum;Phytophthora infestans,antifungal,17.33
+AMP_SYN_0078,PLTERQLKTGWAWWCYKGLFV,21,dbAMP,Phytophthora infestans;Sclerotinia sclerotiorum;Puccinia graminis,broad-spectrum,13.54
+AMP_SYN_0079,GKKCYKTVIILFDGWLKDGISKNPG,25,dbAMP,Rhizoctonia solani;Magnaporthe oryzae,antifungal,54.35
+AMP_SYN_0080,DQKVLNAATWPRITFQAK,18,DRAMP,Rhizoctonia solani;Verticillium dahliae;Fusarium oxysporum,antifungal,5.82
+AMP_SYN_0081,LIAQLGKPKWEVLGMGHSCWKGP,23,UniProt,Fusarium oxysporum;Botrytis cinerea;Sclerotinia sclerotiorum,antifungal,40.43
+AMP_SYN_0082,IKNPCTNGYYVVFVP,15,DRAMP,Sclerotinia sclerotiorum;Magnaporthe oryzae,broad-spectrum,
+AMP_SYN_0083,ETAFCSSWGLLTPLIRS,17,APD3,Fusarium oxysporum;Xanthomonas campestris;Ralstonia solanacearum,broad-spectrum,25.44
+AMP_SYN_0084,THRWIRAGYKHWKPNCM,17,APD3,Erwinia amylovora,antibacterial,
+AMP_SYN_0085,RGCAGIGCEKLIA,13,dbAMP,Alternaria solani;Sclerotinia sclerotiorum;Fusarium oxysporum,antifungal,
+AMP_SYN_0086,IRQLYGLPDGGDDGGRIWQKLKC,23,dbAMP,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,53.48
+AMP_SYN_0087,KSNLGLPKEIGRNWRGG,17,APD3,Verticillium dahliae,antifungal,24.71
+AMP_SYN_0088,PLWKQKGPSSIKNGNQSAYK,20,dbAMP,Sclerotinia sclerotiorum;Colletotrichum gloeosporioides;Fusarium oxysporum,antifungal,33.05
+AMP_SYN_0089,PSLVCGNDLLNNWGSCCFRLPFI,23,DRAMP,Colletotrichum gloeosporioides;Magnaporthe oryzae;Alternaria solani,antifungal,29.54
+AMP_SYN_0090,KGVCSRHHRLHCQKAAQAHCSWR,23,UniProt,Colletotrichum gloeosporioides;Sclerotinia sclerotiorum,antifungal,16.07
+AMP_SYN_0091,FIENKALFLIPFRSACTEGKGTLNL,25,APD3,Verticillium dahliae;Erwinia amylovora;Alternaria solani,broad-spectrum,
+AMP_SYN_0092,SPGLCCCGEPKKCIENPNY,19,dbAMP,Magnaporthe oryzae,antifungal,34.07
+AMP_SYN_0093,TMTWKFILNIKQKDLSF,17,UniProt,Erwinia amylovora,antibacterial,12.16
+AMP_SYN_0094,LCCRSISAQLYCSRGYKHS,19,dbAMP,Puccinia graminis,antifungal,28.36
+AMP_SYN_0095,TLKLRSSLLLD,11,DRAMP,Sclerotinia sclerotiorum;Xanthomonas campestris;Botrytis cinerea;Ralstonia solanacearum,broad-spectrum,18.12
+AMP_SYN_0096,YTCTGQSRPKLG,12,dbAMP,Botrytis cinerea;Sclerotinia sclerotiorum;Phytophthora infestans,antifungal,38.76
+AMP_SYN_0097,KKLTTCYNPTSI,12,dbAMP,Phytophthora infestans;Alternaria solani,antifungal,77.76
+AMP_SYN_0098,HLLKHPACRKCTKA,14,dbAMP,Magnaporthe oryzae;Phytophthora infestans;Verticillium dahliae,antifungal,77.05
+AMP_SYN_0099,CICNNAMQRKCCFALKKAHCTPK,23,dbAMP,Botrytis cinerea,antifungal,
+AMP_SYN_0100,IGISTNPALLDHFR,14,DRAMP,Botrytis cinerea,antifungal,31.78
+AMP_SYN_0101,CCRHKSGNGLQGWATVF,17,APD3,Phytophthora infestans;Fusarium oxysporum,antifungal,36.63
+AMP_SYN_0102,KCKLLYYWCTLIPRWRAAGAASKMKIPCLLG,31,dbAMP,Magnaporthe oryzae,antifungal,9.43
+AMP_SYN_0103,INSPAPRTACKKLGRRC,17,dbAMP,Rhizoctonia solani,antifungal,20.8
+AMP_SYN_0104,LRQDCRGVRASGAQLAKIKLIGCLQF,26,UniProt,Pseudomonas syringae;Fusarium oxysporum,broad-spectrum,4.11
+AMP_SYN_0105,IVEWASQNFGVGSL,14,DRAMP,Pseudomonas syringae,antibacterial,26.97
+AMP_SYN_0106,WAKGTGLAFLGMKLKRFV,18,dbAMP,Pseudomonas syringae,antibacterial,8.48
+AMP_SYN_0107,NPAGRIRGFYKWYC,14,DRAMP,Sclerotinia sclerotiorum;Alternaria solani;Rhizoctonia solani,antifungal,16.15
+AMP_SYN_0108,LKNILANCGTVISGKFW,17,APD3,Xanthomonas campestris,antibacterial,27.09
+AMP_SYN_0109,KGCHRKKTCSGPLFTDQWIAGSEWTL,26,DRAMP,Xanthomonas campestris;Fusarium oxysporum,broad-spectrum,19.03
+AMP_SYN_0110,SYCSIMNLGS,10,dbAMP,Rhizoctonia solani;Magnaporthe oryzae;Botrytis cinerea,antifungal,
+AMP_SYN_0111,CWAVKQKIKHVGKDLMNKVKCIK,23,DRAMP,Colletotrichum gloeosporioides,antifungal,19.19
+AMP_SYN_0112,YRHLKVKIEGFVRAYLRYYCN,21,dbAMP,Fusarium oxysporum;Puccinia graminis;Sclerotinia sclerotiorum,antifungal,33.02
+AMP_SYN_0113,WYEGGRHLPHLCWSSW,16,APD3,Fusarium oxysporum;Pseudomonas syringae,broad-spectrum,21.95
+AMP_SYN_0114,AKGLSHESTADP,12,UniProt,Xanthomonas campestris;Pseudomonas syringae,antibacterial,64.12
+AMP_SYN_0115,LHGYRKNKGQLVLHNSIRGE,20,dbAMP,Xanthomonas campestris;Erwinia amylovora,antibacterial,53.48
+AMP_SYN_0116,VWFLWCRGYDVCQNVK,16,dbAMP,Alternaria solani,antifungal,11.87
+AMP_SYN_0117,RQAKKDIVHISSLRFKSAAGC,21,dbAMP,Botrytis cinerea;Colletotrichum gloeosporioides;Verticillium dahliae,antifungal,15.1
+AMP_SYN_0118,LLKAWDVDCFEPQRGGGALT,20,UniProt,Ralstonia solanacearum,antibacterial,
+AMP_SYN_0119,FAEGCTGIKNCLEVIKGKFGARNCHLWLLTSKLTK,35,DRAMP,Sclerotinia sclerotiorum,antifungal,71.67
+AMP_SYN_0120,KVSPMCREYYSCKYKYMS,18,UniProt,Botrytis cinerea,antifungal,19.43
+AMP_SYN_0121,LLTKVAPLRCDLLW,14,dbAMP,Ralstonia solanacearum,antibacterial,44.83
+AMP_SYN_0122,VGNLKEIMPIIVPAKGIHSGT,21,UniProt,Botrytis cinerea;Magnaporthe oryzae,broad-spectrum,24.28
+AMP_SYN_0123,RGQLCKVIKKIASAQIRLLET,21,APD3,Xanthomonas campestris;Pseudomonas syringae,antibacterial,28.78
+AMP_SYN_0124,GSKNCAILETLHDVRPGIDLWTNPGIARRAVN,32,dbAMP,Colletotrichum gloeosporioides;Magnaporthe oryzae;Rhizoctonia solani;Sclerotinia sclerotiorum,broad-spectrum,65.98
+AMP_SYN_0125,KIHGKPSICKNTINLGCAYNTGQVGD,26,APD3,Ralstonia solanacearum;Erwinia amylovora,antibacterial,51.06
+AMP_SYN_0126,QNYGKIAQLEQFLRVPKTTVEC,22,DRAMP,Ralstonia solanacearum,antibacterial,43.23
+AMP_SYN_0127,FFTKVILKCANLMKFCPLITDYHYVYCTECGYG,33,APD3,Magnaporthe oryzae,antifungal,13.68
+AMP_SYN_0128,KRCLNIWIAFIAG,13,dbAMP,Rhizoctonia solani;Pseudomonas syringae;Colletotrichum gloeosporioides;Puccinia graminis,broad-spectrum,13.81
+AMP_SYN_0129,CILDSGGQLHVYHVHE,16,DRAMP,Puccinia graminis,antifungal,7.66
+AMP_SYN_0130,LDINAVGLAYNNAP,14,APD3,Rhizoctonia solani;Magnaporthe oryzae,antifungal,
+AMP_SYN_0131,PMGNNGLCSCQCCCFFG,17,DRAMP,Sclerotinia sclerotiorum;Phytophthora infestans;Magnaporthe oryzae,antifungal,32.5
+AMP_SYN_0132,LVPKFACCLKWR,12,dbAMP,Puccinia graminis;Rhizoctonia solani,antifungal,8.93
+AMP_SYN_0133,GASTTIPKCTVACNGVWGRIHCIKS,25,APD3,Magnaporthe oryzae;Botrytis cinerea,antifungal,40.72
+AMP_SYN_0134,PAWDKLSPEIHAPTYCVC,18,APD3,Alternaria solani;Fusarium oxysporum,antifungal,
+AMP_SYN_0135,YPHLPCNGHPIT,12,APD3,Fusarium oxysporum,antifungal,48.91
+AMP_SYN_0136,KKKDRGGGKLISCK,14,DRAMP,Erwinia amylovora;Pseudomonas syringae,antibacterial,
+AMP_SYN_0137,YRAIALSSWNVLNKHSSTGRLQ,22,dbAMP,Puccinia graminis;Fusarium oxysporum;Alternaria solani,antifungal,
+AMP_SYN_0138,SWGLPADCQQCLEWIKRQCIVTLRKN,26,DRAMP,Fusarium oxysporum;Colletotrichum gloeosporioides,antifungal,
+AMP_SYN_0139,LKLVRVPESCNLGVKLPGIHGSCLVKTLGRLFFQPVCQYE,40,UniProt,Colletotrichum gloeosporioides;Puccinia graminis,broad-spectrum,58.48
+AMP_SYN_0140,LWQPVLVKACIAAGRYPDARFLHKLPLFNIKSPPAIKSPWARFTTKFNQI,50,DRAMP,Pseudomonas syringae;Magnaporthe oryzae;Erwinia amylovora;Botrytis cinerea,broad-spectrum,14.42
+AMP_SYN_0141,EEKIKLCLGGQDDGAWLNKLHRG,23,UniProt,Erwinia amylovora,antibacterial,53.88
+AMP_SYN_0142,CFFGIFRLYSYAPK,14,UniProt,Sclerotinia sclerotiorum;Puccinia graminis,broad-spectrum,31.68
+AMP_SYN_0143,VWILGVSISK,10,APD3,Xanthomonas campestris;Erwinia amylovora,antibacterial,18.28
+AMP_SYN_0144,YRLMFMFPSFSVRKSAPAQAAE,22,UniProt,Phytophthora infestans,antifungal,20.53
+AMP_SYN_0145,IMKAPLNMRLPAVCR,15,DRAMP,Sclerotinia sclerotiorum;Verticillium dahliae,antifungal,21.97
+AMP_SYN_0146,KLCISLWCPVSRIWLLC,17,APD3,Colletotrichum gloeosporioides;Botrytis cinerea;Phytophthora infestans,antifungal,4.18
+AMP_SYN_0147,RVHINKDFSFESTTWY,16,APD3,Botrytis cinerea;Phytophthora infestans;Verticillium dahliae,antifungal,
+AMP_SYN_0148,QKGCNCMVGKLGLLIGKAG,19,APD3,Phytophthora infestans;Alternaria solani,antifungal,17.64
+AMP_SYN_0149,PGKKRKCNCGSVFRMQVTMSLRFAGVLND,29,DRAMP,Phytophthora infestans;Magnaporthe oryzae;Rhizoctonia solani,antifungal,8.86
+AMP_SYN_0150,IKNTSLDKKEWNWRKHFKAIA,21,UniProt,Erwinia amylovora;Pseudomonas syringae,antibacterial,16.91
+AMP_SYN_0151,VANCWNGRLLIILVAGYFI,19,UniProt,Fusarium oxysporum;Colletotrichum gloeosporioides;Magnaporthe oryzae,antifungal,18.43
+AMP_SYN_0152,DANFEIQCFSQKK,13,DRAMP,Xanthomonas campestris;Erwinia amylovora,antibacterial,51.19
+AMP_SYN_0153,CLCKVDDVKIW,11,UniProt,Phytophthora infestans;Botrytis cinerea;Puccinia graminis,antifungal,32.69
+AMP_SYN_0154,LKKFICLRMKDPVLAI,16,DRAMP,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,7.24
+AMP_SYN_0155,EVLVLRCNVLAWPKKTPKW,19,APD3,Verticillium dahliae;Botrytis cinerea;Sclerotinia sclerotiorum,antifungal,27.38
+AMP_SYN_0156,GRVCLLGARALKIFSICKLGLLLYIFLLELKYLRICT,37,UniProt,Magnaporthe oryzae;Botrytis cinerea;Puccinia graminis,antifungal,5.4
+AMP_SYN_0157,RSLPAINSSKLCGILQWINGW,21,APD3,Erwinia amylovora;Xanthomonas campestris,antibacterial,31.99
+AMP_SYN_0158,TWKFRKPLPHNYCGIPIFAPVLQLLHSF,28,APD3,Ralstonia solanacearum,antibacterial,17.48
+AMP_SYN_0159,ICAGWSWVSLPWLRRW,16,DRAMP,Rhizoctonia solani,antifungal,24.19
+AMP_SYN_0160,GISFPSIHLPGGI,13,dbAMP,Erwinia amylovora;Puccinia graminis,broad-spectrum,
+AMP_SYN_0161,FLERWERFGGFSSH,14,DRAMP,Xanthomonas campestris;Ralstonia solanacearum,antibacterial,
+AMP_SYN_0162,TIGVVLGERKIRCLK,15,APD3,Erwinia amylovora;Ralstonia solanacearum,antibacterial,
+AMP_SYN_0163,KCKGAPICITEGGWHEKKRIIKLYPSQSLTFSRKAKCVMLGK,42,DRAMP,Botrytis cinerea;Magnaporthe oryzae,antifungal,24.59
+AMP_SYN_0164,FGTCRGILSHIHPLL,15,UniProt,Puccinia graminis;Verticillium dahliae;Sclerotinia sclerotiorum,broad-spectrum,38.71
+AMP_SYN_0165,RKALKWTNVKLIVCHGNQLIVRWRLK,26,dbAMP,Pseudomonas syringae,antibacterial,4.49
+AMP_SYN_0166,WPCDCAVLAIRCGD,14,dbAMP,Puccinia graminis;Verticillium dahliae,antifungal,33.42
+AMP_SYN_0167,KCLEAHVTKTWLCWLLKRVKNLVKFCG,27,APD3,Fusarium oxysporum,antifungal,8.11
+AMP_SYN_0168,HKAVWKAKGFAIILIDRIIGKG,22,dbAMP,Sclerotinia sclerotiorum;Rhizoctonia solani;Phytophthora infestans,broad-spectrum,27.91
+AMP_SYN_0169,ITEGNMGMEAALECGQQFD,19,DRAMP,Alternaria solani;Rhizoctonia solani,antifungal,17.42
+AMP_SYN_0170,GTWARAKETSSCRGRKRAK,19,UniProt,Erwinia amylovora,antibacterial,22.36
+AMP_SYN_0171,PGGMAWLGNFVTFCN,15,DRAMP,Botrytis cinerea;Sclerotinia sclerotiorum;Puccinia graminis,antifungal,4.48
+AMP_SYN_0172,WLPPDRGKPHWRAHDLCKGLNHV,23,DRAMP,Rhizoctonia solani;Botrytis cinerea;Magnaporthe oryzae,broad-spectrum,16.23
+AMP_SYN_0173,KKGPEEHRGSVLADGGI,17,dbAMP,Xanthomonas campestris,antibacterial,44.96
+AMP_SYN_0174,RGQNLILKLLGNC,13,APD3,Botrytis cinerea;Fusarium oxysporum,broad-spectrum,
+AMP_SYN_0175,CEANIKMLAFQA,12,DRAMP,Rhizoctonia solani,antifungal,44.66
+AMP_SYN_0176,IRVSSAMLRSAFKCFIFNLWL,21,UniProt,Alternaria solani;Puccinia graminis;Sclerotinia sclerotiorum;Erwinia amylovora,broad-spectrum,
+AMP_SYN_0177,VDEIHDYKHGYGIRKQLLFRVGWKIQYLKYGGFT,34,DRAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,63.92
+AMP_SYN_0178,KDGVGGGLLFAGKKVPSCNAS,21,UniProt,Alternaria solani;Sclerotinia sclerotiorum,antifungal,
+AMP_SYN_0179,WCRRTWNNALGLGPDPYWR,19,APD3,Colletotrichum gloeosporioides;Ralstonia solanacearum;Botrytis cinerea,broad-spectrum,31.59
+AMP_SYN_0180,HKRLGIKPRKFILLYLGGKPLC,22,dbAMP,Ralstonia solanacearum,antibacterial,13.55
+AMP_SYN_0181,LAGYLYKDASFIRTCAWVTSAPCKAFLFLGK,31,DRAMP,Fusarium oxysporum;Ralstonia solanacearum;Alternaria solani;Sclerotinia sclerotiorum,broad-spectrum,47.67
+AMP_SYN_0182,GAFPGKWANNVICGVIYKQVK,21,DRAMP,Erwinia amylovora;Phytophthora infestans;Rhizoctonia solani;Fusarium oxysporum,broad-spectrum,19.75
+AMP_SYN_0183,GLGIDHHMGYKSMVVSA,17,DRAMP,Ralstonia solanacearum;Sclerotinia sclerotiorum;Botrytis cinerea,broad-spectrum,32.1
+AMP_SYN_0184,RLPTPKLKGLKCNLPFCPVVKVRNLDALQ,29,UniProt,Ralstonia solanacearum,antibacterial,11.19
+AMP_SYN_0185,WGRSNRDECAYMLLLFACRCTKN,23,APD3,Magnaporthe oryzae;Verticillium dahliae,antifungal,15.79
+AMP_SYN_0186,FIWVWFPFFEWKMPTVKRLSQIWLLNPACKVVGL,34,UniProt,Fusarium oxysporum;Pseudomonas syringae;Magnaporthe oryzae;Erwinia amylovora,broad-spectrum,7.42
+AMP_SYN_0187,VRGDGVPVKNCKELVLIGAKV,21,DRAMP,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,
+AMP_SYN_0188,CPNCQQYLDLAEG,13,APD3,Magnaporthe oryzae,antifungal,70.94
+AMP_SYN_0189,RAGRWGEVWARA,12,UniProt,Verticillium dahliae,antifungal,41.89
+AMP_SYN_0190,GLKICLGLMLSADNATNTGVAKEPLPLREKLWCGI,35,APD3,Botrytis cinerea;Phytophthora infestans;Rhizoctonia solani,antifungal,40.41
+AMP_SYN_0191,CTGIFFALYLCQLSQKTGLMVLKRKSVFGFCKSRFL,36,DRAMP,Colletotrichum gloeosporioides;Puccinia graminis,antifungal,
+AMP_SYN_0192,NPGAGLRCGILWSFSVKK,18,UniProt,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,38.54
+AMP_SYN_0193,VALLPLALGVSADTHIL,17,dbAMP,Ralstonia solanacearum,antibacterial,20.91
+AMP_SYN_0194,QGCVISGLEIAFCKSVDHKTGGRCYKYFAITCG,33,UniProt,Alternaria solani,antifungal,12.7
+AMP_SYN_0195,VCRRARNFFGLRP,13,DRAMP,Xanthomonas campestris,antibacterial,28.79
+AMP_SYN_0196,FHGCPGGALHKCKP,14,UniProt,Sclerotinia sclerotiorum;Magnaporthe oryzae,antifungal,
+AMP_SYN_0197,LGSQPLYRKCSVKKPQKFFTMVIPN,25,UniProt,Botrytis cinerea;Alternaria solani,antifungal,
+AMP_SYN_0198,KERLCCSSGNSLIIMLY,17,dbAMP,Verticillium dahliae;Sclerotinia sclerotiorum;Colletotrichum gloeosporioides,antifungal,25.63
+AMP_SYN_0199,LGNAWLKLKLSEWACSRIKN,20,APD3,Pseudomonas syringae,antibacterial,
+AMP_SYN_0200,KGLKFVGSPVWQVYLLKT,18,dbAMP,Fusarium oxysporum,antifungal,5.88
+AMP_SYN_0201,CGAKLMQIKFECLTIKGTCANC,22,APD3,Botrytis cinerea,antifungal,50.33
+AMP_SYN_0202,NIKSLKEKLKHELLTGKILIYLPCKPCRYYRK,32,UniProt,Pseudomonas syringae,antibacterial,7.55
+AMP_SYN_0203,MNPPLLLVLAKVLGHYGDPL,20,APD3,Rhizoctonia solani,antifungal,25.53
+AMP_SYN_0204,LNGRAKCARGLGGRLVRNIERGELA,25,UniProt,Erwinia amylovora,antibacterial,54.39
+AMP_SYN_0205,RGKNFRHNRC,10,APD3,Rhizoctonia solani;Colletotrichum gloeosporioides,antifungal,21.4
+AMP_SYN_0206,IPKDTAVKPWPAVNWKVTG,19,APD3,Sclerotinia sclerotiorum;Rhizoctonia solani;Puccinia graminis,antifungal,27.75
+AMP_SYN_0207,LPYGAAAILPHQGA,14,DRAMP,Verticillium dahliae;Pseudomonas syringae;Alternaria solani;Sclerotinia sclerotiorum,broad-spectrum,9.64
+AMP_SYN_0208,QCTCNVLWVPGKW,13,dbAMP,Sclerotinia sclerotiorum;Alternaria solani,antifungal,54.57
+AMP_SYN_0209,DARIGAWGKKVLEK,14,UniProt,Xanthomonas campestris,antibacterial,11.84
+AMP_SYN_0210,QCALGKVDNWNGPVLKW,17,DRAMP,Botrytis cinerea;Colletotrichum gloeosporioides;Puccinia graminis,antifungal,18.17
+AMP_SYN_0211,IPRCLYGGAYNITHTRGFLWNGICPKV,27,APD3,Fusarium oxysporum,antifungal,
+AMP_SYN_0212,KALGLSKYAARA,12,APD3,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,14.7
+AMP_SYN_0213,VACNKVAPCEAGSKELSCKS,20,dbAMP,Alternaria solani;Sclerotinia sclerotiorum,antifungal,17.59
+AMP_SYN_0214,CPLGWFAEAGRDIDGL,16,UniProt,Pseudomonas syringae;Xanthomonas campestris,antibacterial,6.99
+AMP_SYN_0215,CAVQLGPSKCCGKGEPL,17,dbAMP,Phytophthora infestans,antifungal,42.06
+AMP_SYN_0216,KLEYYMTYKKMFACDTVKDVAIFGMVKC,28,DRAMP,Erwinia amylovora,antibacterial,31.38
+AMP_SYN_0217,AFKLKRVFCFGIFVALAKFLEIKF,24,DRAMP,Fusarium oxysporum,antifungal,32.88
+AMP_SYN_0218,GCKKRFGDSWVLLFILTFKKAKTGKFVWVVKA,32,UniProt,Colletotrichum gloeosporioides;Sclerotinia sclerotiorum,antifungal,18.37
+AMP_SYN_0219,SPCKCRPIFHGYAPDKLLY,19,UniProt,Sclerotinia sclerotiorum;Magnaporthe oryzae;Alternaria solani,antifungal,
+AMP_SYN_0220,PAMIPLGRPLLFPMH,15,UniProt,Xanthomonas campestris;Erwinia amylovora,antibacterial,19.25
+AMP_SYN_0221,IMIELAQFYGCKWLWFRF,18,DRAMP,Phytophthora infestans;Fusarium oxysporum,antifungal,30.58
+AMP_SYN_0222,IKKSKLSVKIPPYVEVCIEWA,21,DRAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,12.19
+AMP_SYN_0223,GWLCHKNGATFWNIHNGLPTK,21,APD3,Magnaporthe oryzae;Phytophthora infestans,antifungal,34.67
+AMP_SYN_0224,KWRAHKDVQGYTP,13,APD3,Fusarium oxysporum;Puccinia graminis,broad-spectrum,65.53
+AMP_SYN_0225,KIFQNYDKYLCAWRWVDWLK,20,APD3,Colletotrichum gloeosporioides;Alternaria solani;Sclerotinia sclerotiorum,broad-spectrum,24.89
+AMP_SYN_0226,SQVHCKAPCAMFHGLFLRRFC,21,UniProt,Colletotrichum gloeosporioides,antifungal,29.15
+AMP_SYN_0227,FGLWVIDTIIGHYTCQKYSGSWKVCLCFKTYAWRCIVILQRCEILASS,48,DRAMP,Puccinia graminis;Fusarium oxysporum,antifungal,18.6
+AMP_SYN_0228,DGNNCNGEVNARKWLIKKGPYSIRAGLDKPHAINWAGN,38,APD3,Xanthomonas campestris,antibacterial,45.78
+AMP_SYN_0229,LTSPGPPCLSAKIK,14,APD3,Magnaporthe oryzae,antifungal,74.43
+AMP_SYN_0230,SSLPWTQPSKVCCAHPCK,18,DRAMP,Magnaporthe oryzae;Phytophthora infestans,antifungal,55.39
+AMP_SYN_0231,RCCPPGFYKRCA,12,DRAMP,Botrytis cinerea,antifungal,43.69
+AMP_SYN_0232,SKACGANRRVFVEHCT,16,APD3,Alternaria solani;Magnaporthe oryzae,antifungal,53.13
+AMP_SYN_0233,KASRLQWERAQVVTKPEPCSYK,22,APD3,Xanthomonas campestris;Erwinia amylovora;Verticillium dahliae,broad-spectrum,
+AMP_SYN_0234,KIGQCKIKRPTFIYKTVSWIAPPILPCIPY,30,dbAMP,Puccinia graminis;Pseudomonas syringae,broad-spectrum,26.16
+AMP_SYN_0235,FTIFKKRRLRSWHNW,15,DRAMP,Erwinia amylovora,antibacterial,27.69
+AMP_SYN_0236,CKFWARSKAELGGMR,15,dbAMP,Erwinia amylovora;Xanthomonas campestris,antibacterial,39.3
+AMP_SYN_0237,NKGHTLWAKV,10,DRAMP,Rhizoctonia solani;Fusarium oxysporum,antifungal,41.29
+AMP_SYN_0238,ENRVDKGIRLKLLKLDAG,18,DRAMP,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,35.85
+AMP_SYN_0239,AATHRAVHCHHHN,13,dbAMP,Xanthomonas campestris,antibacterial,26.12
+AMP_SYN_0240,CDLANKKKAKAGLGCK,16,APD3,Colletotrichum gloeosporioides;Alternaria solani,antifungal,40.77
+AMP_SYN_0241,LIKKTRTLGAYIFR,14,dbAMP,Ralstonia solanacearum,antibacterial,9.64
+AMP_SYN_0242,ASKFSNGSKLFIMKREAPT,19,UniProt,Erwinia amylovora;Magnaporthe oryzae;Sclerotinia sclerotiorum;Phytophthora infestans,broad-spectrum,31.32
+AMP_SYN_0243,WQAFKGRRTI,10,dbAMP,Erwinia amylovora,antibacterial,70.16
+AMP_SYN_0244,SNGLICEGSKLK,12,APD3,Phytophthora infestans,antifungal,
+AMP_SYN_0245,ASGLNAQRAVGGAWVPVITTGLKCNLRLKCLRGSRSRWFCFG,42,DRAMP,Colletotrichum gloeosporioides;Alternaria solani,antifungal,8.25
+AMP_SYN_0246,GKPWVWIQSAWL,12,UniProt,Colletotrichum gloeosporioides;Sclerotinia sclerotiorum;Pseudomonas syringae;Magnaporthe oryzae,broad-spectrum,33.73
+AMP_SYN_0247,GWISCTTIVIYGC,13,UniProt,Magnaporthe oryzae,antifungal,67.52
+AMP_SYN_0248,MVRIATSWKITQVSSPKHLSRKAANMSCIMGCDKWSRT,38,dbAMP,Erwinia amylovora;Rhizoctonia solani;Botrytis cinerea,broad-spectrum,19.24
+AMP_SYN_0249,ELGGCIIISLAALLFCKGTAMLDWDLALRVSKFFWSGRIKFFSQEESAYG,50,UniProt,Rhizoctonia solani;Botrytis cinerea;Fusarium oxysporum,antifungal,44.09
+AMP_SYN_0250,CGPPQQRGCAGFV,13,UniProt,Fusarium oxysporum;Verticillium dahliae;Phytophthora infestans,antifungal,79.77
+AMP_SYN_0251,GIIWLLGKWVCGLCCAC,17,dbAMP,Alternaria solani;Sclerotinia sclerotiorum;Phytophthora infestans,antifungal,29.81
+AMP_SYN_0252,LRGGVGYRDTNSADFAGPKYVA,22,APD3,Rhizoctonia solani;Botrytis cinerea,antifungal,55.45
+AMP_SYN_0253,CCTEDKGVLLYLLKARPVAPPILWTDCSNKWLAWNW,36,DRAMP,Verticillium dahliae;Magnaporthe oryzae;Puccinia graminis,antifungal,19.48
+AMP_SYN_0254,SGSRLLCGGRIAFI,14,UniProt,Magnaporthe oryzae;Botrytis cinerea;Phytophthora infestans,antifungal,17.8
+AMP_SYN_0255,SRVVLHCIFKIGLCKIEM,18,UniProt,Puccinia graminis;Magnaporthe oryzae,antifungal,6.78
+AMP_SYN_0256,LNCKCSGYPGGKLLVKKIKQSHLRAR,26,UniProt,Xanthomonas campestris;Erwinia amylovora,antibacterial,14.77
+AMP_SYN_0257,VGLKPMGWTEERLTCLACEKPTW,23,dbAMP,Verticillium dahliae;Alternaria solani;Sclerotinia sclerotiorum,antifungal,36.38
+AMP_SYN_0258,CCESPEAKDGTTLCRDK,17,DRAMP,Rhizoctonia solani;Verticillium dahliae;Colletotrichum gloeosporioides,antifungal,12.46
+AMP_SYN_0259,TLFLSAAMQYTRLLGKKLL,19,DRAMP,Rhizoctonia solani;Fusarium oxysporum,broad-spectrum,30.79
+AMP_SYN_0260,KGAVKKKWHPAG,12,dbAMP,Pseudomonas syringae,antibacterial,23.13
+AMP_SYN_0261,VTQKVQIKWNIKWDFPCK,18,UniProt,Erwinia amylovora,antibacterial,16.55
+AMP_SYN_0262,GFAAVHDSVAAKMCFGHH,18,DRAMP,Xanthomonas campestris,antibacterial,26.8
+AMP_SYN_0263,VKKTCCLRWSACMTVDGKKRC,21,APD3,Botrytis cinerea,antifungal,19.3
+AMP_SYN_0264,KIRGSHKCIRINDRKF,16,dbAMP,Erwinia amylovora;Ralstonia solanacearum,antibacterial,23.12
+AMP_SYN_0265,WKRQKAHIRKIAVDLYYSVYKVP,23,dbAMP,Ralstonia solanacearum;Xanthomonas campestris,antibacterial,24.88
+AMP_SYN_0266,VLDINVMMKHSNRVCLIQVLLFKGHNAV,28,DRAMP,Rhizoctonia solani;Ralstonia solanacearum;Phytophthora infestans,broad-spectrum,21.55
+AMP_SYN_0267,RTGKCRWKLAHGRLQWNTFGN,21,DRAMP,Phytophthora infestans;Rhizoctonia solani;Pseudomonas syringae,broad-spectrum,
+AMP_SYN_0268,GLSICQSCAVKKILLKIGKKKW,22,APD3,Magnaporthe oryzae,antifungal,9.25
+AMP_SYN_0269,KKWKLPKADLVCTCIGLCGI,20,UniProt,Magnaporthe oryzae,antifungal,
+AMP_SYN_0270,AVVFSKCHTKLLVRKQLRKK,20,UniProt,Xanthomonas campestris;Ralstonia solanacearum,antibacterial,14.45
+AMP_SYN_0271,IVHAPKGCDAMRGNN,15,UniProt,Pseudomonas syringae,antibacterial,16.2
+AMP_SYN_0272,KANLWGFSTLCLGLKWHEALIC,22,dbAMP,Magnaporthe oryzae;Verticillium dahliae,antifungal,33.0
+AMP_SYN_0273,RDWPAWEQGCCVGWVAGLG,19,DRAMP,Phytophthora infestans,antifungal,19.07
+AMP_SYN_0274,GLAANVALLCRNCLKTKRCLDGWWLASWMNDAVGGPYTFTG,41,DRAMP,Xanthomonas campestris;Pseudomonas syringae,antibacterial,36.98
+AMP_SYN_0275,SQYVFKSVWNYQGNGFWGVCVLAAELPKICVNLV,34,UniProt,Verticillium dahliae;Alternaria solani;Puccinia graminis,broad-spectrum,
+AMP_SYN_0276,ERPAKWKFAGVHCLGQFKIGVQ,22,UniProt,Xanthomonas campestris;Pseudomonas syringae,antibacterial,4.24
+AMP_SYN_0277,EFRPLELRCWTVRGT,15,UniProt,Erwinia amylovora;Xanthomonas campestris,antibacterial,55.6
+AMP_SYN_0278,NWAWKYGPKIRVF,13,APD3,Fusarium oxysporum;Sclerotinia sclerotiorum,antifungal,44.55
+AMP_SYN_0279,GVSYFPWVFGAMAKASWTGKWSSKGALKCK,30,dbAMP,Erwinia amylovora,antibacterial,
+AMP_SYN_0280,VPRASALKCAATIMITRMKKKM,22,dbAMP,Erwinia amylovora,antibacterial,3.51
+AMP_SYN_0281,LCAQLTVCKHKMECACLKNHLLD,23,APD3,Alternaria solani;Fusarium oxysporum,antifungal,29.86
+AMP_SYN_0282,AKSTKFFVRH,10,dbAMP,Ralstonia solanacearum;Erwinia amylovora,antibacterial,56.62
+AMP_SYN_0283,LKDKSAFAFFMGRWGRFEYIAACGFLR,27,dbAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,32.87
+AMP_SYN_0284,QHLEATVAPIRCWGGSNWYYVVA,23,UniProt,Pseudomonas syringae,antibacterial,
+AMP_SYN_0285,PGKNVRLTGDGMG,13,DRAMP,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,69.55
+AMP_SYN_0286,RSLDIVRIKEQLKWKLN,17,APD3,Pseudomonas syringae,antibacterial,27.41
+AMP_SYN_0287,KFFKIDTGCRGKFAKHKKIKGA,22,DRAMP,Ralstonia solanacearum,antibacterial,14.24
+AMP_SYN_0288,GKLAGFCILGPGRRTELCTQ,20,UniProt,Phytophthora infestans;Alternaria solani,antifungal,33.49
+AMP_SYN_0289,WSRANYWTFQFFLLKSHC,18,UniProt,Pseudomonas syringae;Erwinia amylovora,antibacterial,16.71
+AMP_SYN_0290,TACTGRKNHFKRRPGLLAC,19,APD3,Verticillium dahliae;Sclerotinia sclerotiorum;Colletotrichum gloeosporioides,antifungal,27.44
+AMP_SYN_0291,WAIKGWNGEPESLAFVIF,18,DRAMP,Alternaria solani,antifungal,
+AMP_SYN_0292,ETIDCLKAWTCFKQKLWLKPG,21,APD3,Sclerotinia sclerotiorum,antifungal,
+AMP_SYN_0293,LVVKLRGVKPQGLSEGVRKVELIWGTGMGVPQF,33,DRAMP,Alternaria solani,antifungal,23.13
+AMP_SYN_0294,RKRIDFAANP,10,DRAMP,Pseudomonas syringae;Erwinia amylovora,antibacterial,42.12
+AMP_SYN_0295,ACVGRKALGWCSTEACGL,18,APD3,Phytophthora infestans,antifungal,
+AMP_SYN_0296,KEQVLKANLNNCPKLAIFGVF,21,DRAMP,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,16.5
+AMP_SYN_0297,FVSSDDICGLEFLWCFHEIGIK,22,DRAMP,Verticillium dahliae;Alternaria solani;Fusarium oxysporum,antifungal,5.98
+AMP_SYN_0298,VIRKYQSVLGCGMIVRC,17,dbAMP,Alternaria solani;Rhizoctonia solani;Botrytis cinerea,antifungal,9.22
+AMP_SYN_0299,AVKKRKPAAR,10,DRAMP,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,9.17
+AMP_SYN_0300,AIGDFAVLWRGGNRLYNGATGG,22,APD3,Colletotrichum gloeosporioides;Sclerotinia sclerotiorum,broad-spectrum,5.63
+AMP_SYN_0301,LIGKATAENCFCLSWGAQGQGEGGKNGRCYIDKKRR,36,UniProt,Sclerotinia sclerotiorum,antifungal,67.3
+AMP_SYN_0302,TRVLDQGKKIL,11,APD3,Pseudomonas syringae;Xanthomonas campestris,antibacterial,
+AMP_SYN_0303,ATRIIIIRIGYAVYCWDRWRRHQNIAI,27,DRAMP,Alternaria solani,antifungal,25.78
+AMP_SYN_0304,PNGKPGLWTARNVILVK,17,dbAMP,Ralstonia solanacearum;Erwinia amylovora,antibacterial,29.93
+AMP_SYN_0305,KLVLRRVTCLSSGFRPADK,19,dbAMP,Erwinia amylovora;Ralstonia solanacearum,antibacterial,11.49
+AMP_SYN_0306,REIPFEWKSEAER,13,APD3,Verticillium dahliae;Botrytis cinerea,antifungal,78.8
+AMP_SYN_0307,CCCAAFKRAGWNSAFSI,17,dbAMP,Rhizoctonia solani;Verticillium dahliae,antifungal,19.41
+AMP_SYN_0308,LHPHGGIILYTSATISVACLWRGKPTKNANW,31,UniProt,Alternaria solani,antifungal,10.77
+AMP_SYN_0309,FKRSHWWKNPCILQTVRQAKCSYY,24,APD3,Rhizoctonia solani,antifungal,14.86
+AMP_SYN_0310,GEWPCYAWGIGQNWPNVNKSGFLVAHVRQNRWKFGG,36,dbAMP,Xanthomonas campestris,antibacterial,15.88
+AMP_SYN_0311,CGIRGLEIKRSWCNLCATGSGFPDGRTSAG,30,APD3,Verticillium dahliae;Rhizoctonia solani,antifungal,31.48
+AMP_SYN_0312,KPIYGSFRSPATEKIYNTYLHPY,23,UniProt,Phytophthora infestans;Puccinia graminis,antifungal,25.99
+AMP_SYN_0313,CGSTAWGNLKKVFSFNITCRTIYPDAHKWCKHKDQG,36,UniProt,Verticillium dahliae;Magnaporthe oryzae,antifungal,17.96
+AMP_SYN_0314,RYPCKSINKACCNVFLYKPCLIY,23,dbAMP,Botrytis cinerea,antifungal,41.35
+AMP_SYN_0315,AVSESALLSKKLQSCRWVELELSCCF,26,DRAMP,Botrytis cinerea,antifungal,8.8
+AMP_SYN_0316,KILKWAGWKRNKLPLYHL,18,DRAMP,Pseudomonas syringae,antibacterial,
+AMP_SYN_0317,EGSWLFHCMAGIVICGKPLA,20,UniProt,Puccinia graminis;Alternaria solani;Magnaporthe oryzae,antifungal,25.7
+AMP_SYN_0318,SGRIWGGLPIGCVRD,15,DRAMP,Erwinia amylovora,antibacterial,
+AMP_SYN_0319,RCLTLSCHLGGCAGRESPSLVILGPQNC,28,UniProt,Alternaria solani;Puccinia graminis;Sclerotinia sclerotiorum,antifungal,34.69
+AMP_SYN_0320,EYSKGKWVSGTWI,13,DRAMP,Puccinia graminis,antifungal,69.11
+AMP_SYN_0321,DARLKTWKKRKKYVPILVRQPRGRWS,26,APD3,Erwinia amylovora,antibacterial,25.05
+AMP_SYN_0322,PVLFATKWKIICVGLRCG,18,dbAMP,Verticillium dahliae;Sclerotinia sclerotiorum;Puccinia graminis,antifungal,12.71
+AMP_SYN_0323,WWKVWVTAAKGCHQIAKFLVIVARGKIIVL,30,dbAMP,Magnaporthe oryzae;Verticillium dahliae,antifungal,3.62
+AMP_SYN_0324,RAVQCGCKGANWWYCKKPCRRIQRSC,26,dbAMP,Magnaporthe oryzae,antifungal,26.96
+AMP_SYN_0325,KRGPHYRKGKRGDKGRTYGSFQSPKEYLNFCAYWKLC,37,dbAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,6.59
+AMP_SYN_0326,KAKACIWQGVEANGGGLKGKGCPPR,25,dbAMP,Ralstonia solanacearum;Xanthomonas campestris,antibacterial,23.04
+AMP_SYN_0327,FIVCRCLVNEP,11,UniProt,Verticillium dahliae;Alternaria solani;Phytophthora infestans,antifungal,
+AMP_SYN_0328,YFQAELGVTVYVKQVAKWK,19,DRAMP,Ralstonia solanacearum,antibacterial,8.97
+AMP_SYN_0329,WAYESKLKAKKLI,13,APD3,Pseudomonas syringae,antibacterial,31.41
+AMP_SYN_0330,LAVKKQGTGGCFLGNW,16,APD3,Puccinia graminis,antifungal,52.41
+AMP_SYN_0331,LAHLICPLQILGASSFWEYLYRRCRINTNLSFGL,34,UniProt,Sclerotinia sclerotiorum;Alternaria solani;Magnaporthe oryzae,antifungal,12.33
+AMP_SYN_0332,CEETEKRNADEILAAGVWCLQSLIA,25,APD3,Pseudomonas syringae,antibacterial,26.61
+AMP_SYN_0333,RGWLSASLSTCCRVS,15,dbAMP,Fusarium oxysporum,antifungal,21.87
+AMP_SYN_0334,MCSCGKSCVAKDNF,14,DRAMP,Botrytis cinerea;Rhizoctonia solani;Magnaporthe oryzae,antifungal,71.48
+AMP_SYN_0335,FWGAGIVCADKGEKVPMGTG,20,APD3,Botrytis cinerea;Fusarium oxysporum;Magnaporthe oryzae,antifungal,39.33
+AMP_SYN_0336,GIQRKALWGCYEI,13,APD3,Verticillium dahliae;Alternaria solani,antifungal,44.39
+AMP_SYN_0337,SNGKKLLSILKLPRP,15,UniProt,Ralstonia solanacearum,antibacterial,
+AMP_SYN_0338,WVAHTTSGCTYVGSACWPIAWI,22,APD3,Rhizoctonia solani,antifungal,24.77
+AMP_SYN_0339,AICALSDERRPGIHRPGDVARKASPVLSVK,30,APD3,Xanthomonas campestris;Phytophthora infestans;Ralstonia solanacearum,broad-spectrum,17.92
+AMP_SYN_0340,RIAISYLAPKNIIAIKGCIRHGDC,24,APD3,Puccinia graminis;Colletotrichum gloeosporioides,antifungal,
+AMP_SYN_0341,NAGYLLSAGW,10,UniProt,Pseudomonas syringae;Erwinia amylovora,antibacterial,47.18
+AMP_SYN_0342,QYPCIRCSDLILTGDKVCQVSN,22,UniProt,Colletotrichum gloeosporioides;Verticillium dahliae;Alternaria solani,antifungal,44.61
+AMP_SYN_0343,RHITKVRIFLADMKSCTLWR,20,APD3,Ralstonia solanacearum,antibacterial,18.78
+AMP_SYN_0344,ALHAQKYYRKVWYKIGIMPKKMG,23,DRAMP,Ralstonia solanacearum;Erwinia amylovora,antibacterial,5.42
+AMP_SYN_0345,MNRGSATGDIAIKCKNVKCRVVRFGGYKPKGADKN,35,UniProt,Xanthomonas campestris;Pseudomonas syringae,antibacterial,
+AMP_SYN_0346,YFFARKGECG,10,APD3,Sclerotinia sclerotiorum;Colletotrichum gloeosporioides,antifungal,15.35
+AMP_SYN_0347,PGSCVHRDHKKPDPHP,16,dbAMP,Puccinia graminis;Botrytis cinerea;Magnaporthe oryzae,antifungal,47.28
+AMP_SYN_0348,NSRSRAVWKGSPGQYWTNNLAREP,24,DRAMP,Pseudomonas syringae,antibacterial,36.33
+AMP_SYN_0349,IIGGSCKYIHS,11,UniProt,Botrytis cinerea;Magnaporthe oryzae,antifungal,39.58
+AMP_SYN_0350,KELLITPKGMVTYSCNLIKRVCKLAGKFKIFKC,33,dbAMP,Sclerotinia sclerotiorum;Fusarium oxysporum,antifungal,38.86
+AMP_SYN_0351,RKGNGVVPAVAASTKRGELKLI,22,APD3,Ralstonia solanacearum;Botrytis cinerea;Sclerotinia sclerotiorum;Verticillium dahliae,broad-spectrum,23.09
+AMP_SYN_0352,IGDFQCCLIRVTDGCAARDMLYLARYN,27,APD3,Puccinia graminis;Phytophthora infestans;Verticillium dahliae,antifungal,27.02
+AMP_SYN_0353,QSIGACCAYTCVCCGE,16,DRAMP,Sclerotinia sclerotiorum,antifungal,10.53
+AMP_SYN_0354,KAAWAPIGVSEAELLAYYKLLDRVFA,26,DRAMP,Ralstonia solanacearum,antibacterial,19.35
+AMP_SYN_0355,VACCPCGFCQNKSKWVGFTQWCSLDFQKK,29,UniProt,Verticillium dahliae;Botrytis cinerea,antifungal,36.11
+AMP_SYN_0356,KLINADAKLGSNWHAEGSHAN,21,DRAMP,Alternaria solani,antifungal,13.87
+AMP_SYN_0357,QFLGFAGFFLQWSPLNPKSFA,21,UniProt,Botrytis cinerea;Verticillium dahliae,antifungal,18.78
+AMP_SYN_0358,EGILGNTYVGTIVVANACSQGR,22,UniProt,Verticillium dahliae;Fusarium oxysporum,antifungal,10.65
+AMP_SYN_0359,GYKNVTWCFSCYTQ,14,DRAMP,Alternaria solani;Colletotrichum gloeosporioides;Fusarium oxysporum,antifungal,
+AMP_SYN_0360,GRCWAGLSGECKCTRVWIK,19,dbAMP,Rhizoctonia solani;Verticillium dahliae;Phytophthora infestans,antifungal,12.75
+AMP_SYN_0361,RKCRQHSGNTPAKFPKIKH,19,UniProt,Ralstonia solanacearum;Erwinia amylovora,antibacterial,23.42
+AMP_SYN_0362,NTCCVIKMFIAKPWLCKCCAKG,22,DRAMP,Phytophthora infestans;Botrytis cinerea,antifungal,18.11
+AMP_SYN_0363,HFIKGKIAIVFEEGLKCAGCCVLGLGVP,28,UniProt,Phytophthora infestans,antifungal,15.99
+AMP_SYN_0364,FRHGLRCKPKGVG,13,UniProt,Ralstonia solanacearum,antibacterial,
+AMP_SYN_0365,CAKGEGAPTLWLKGCSLYS,19,DRAMP,Botrytis cinerea,antifungal,32.61
+AMP_SYN_0366,GRKRYGKIAHQVRTVLCPQAYTNCKGRYHRFWN,33,dbAMP,Colletotrichum gloeosporioides;Magnaporthe oryzae,antifungal,35.68
+AMP_SYN_0367,VHGLWGELPSCSLSH,15,APD3,Erwinia amylovora,antibacterial,54.5
+AMP_SYN_0368,LGLDKAGKFSCKAHS,15,dbAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,19.11
+AMP_SYN_0369,CRKVGAWGPIIVVVLEKVSCR,21,dbAMP,Phytophthora infestans,antifungal,11.42
+AMP_SYN_0370,CLMLIVKCKGWQKKKIALWKRLGGKC,26,APD3,Fusarium oxysporum;Sclerotinia sclerotiorum,antifungal,10.05
+AMP_SYN_0371,IASTKAASNGCGKGARPRAF,20,APD3,Pseudomonas syringae,antibacterial,34.42
+AMP_SYN_0372,GGYAKPCALCCFKSKACIYSTLSPTMKNESN,31,dbAMP,Puccinia graminis;Rhizoctonia solani;Colletotrichum gloeosporioides,antifungal,21.62
+AMP_SYN_0373,GCLIGISKSDGCILANNKVHCVKADKT,27,APD3,Sclerotinia sclerotiorum;Colletotrichum gloeosporioides;Botrytis cinerea,antifungal,17.11
+AMP_SYN_0374,NHQHQRGRGIVNIKNLVRLCGWHMIA,26,UniProt,Erwinia amylovora;Sclerotinia sclerotiorum,broad-spectrum,
+AMP_SYN_0375,GFRVSCVQIYVAGARKIMAECKCN,24,APD3,Rhizoctonia solani;Phytophthora infestans,antifungal,20.49
+AMP_SYN_0376,FDSSELMPFSVHILAERVNKSLKHMLCAKIAARGCFLGFWVGPAT,45,UniProt,Verticillium dahliae;Colletotrichum gloeosporioides;Phytophthora infestans,antifungal,8.92
+AMP_SYN_0377,MLVLWYNAKFVAFSGRVA,18,UniProt,Fusarium oxysporum;Alternaria solani;Botrytis cinerea,antifungal,6.19
+AMP_SYN_0378,LLCLWGAAKN,10,DRAMP,Fusarium oxysporum,antifungal,23.99
+AMP_SYN_0379,ARFLIPAKIICPLCCLVHHVGCAIRSLASTGAAKG,35,APD3,Phytophthora infestans,antifungal,19.03
+AMP_SYN_0380,LKCAGLKRHVFQWRGNL,17,dbAMP,Fusarium oxysporum,antifungal,13.46
+AMP_SYN_0381,VPMGFCYFRFISCYPNKCKA,20,dbAMP,Fusarium oxysporum,antifungal,20.42
+AMP_SYN_0382,TIAIKFINLNARWVRHSGRFAQMTRVRSLWW,31,dbAMP,Sclerotinia sclerotiorum;Colletotrichum gloeosporioides,antifungal,21.01
+AMP_SYN_0383,DIRVCASWCGL,11,dbAMP,Phytophthora infestans;Alternaria solani;Verticillium dahliae,antifungal,20.02
+AMP_SYN_0384,RSLCLGGEKKKW,12,DRAMP,Sclerotinia sclerotiorum,antifungal,43.41
+AMP_SYN_0385,LCVLWKGRGKF,11,DRAMP,Fusarium oxysporum;Puccinia graminis;Botrytis cinerea,antifungal,13.13
+AMP_SYN_0386,EKKGLFWYYATTLAF,15,APD3,Pseudomonas syringae,antibacterial,6.32
+AMP_SYN_0387,GISKNVCGSGINKYMDAWVALSK,23,DRAMP,Pseudomonas syringae;Ralstonia solanacearum;Alternaria solani,broad-spectrum,31.76
+AMP_SYN_0388,NDRNWWYLYMRLCVSLNLGFLVGS,24,UniProt,Puccinia graminis,antifungal,10.86
+AMP_SYN_0389,RVIHKVNLKKLSCLRILCGGGC,22,UniProt,Rhizoctonia solani;Puccinia graminis;Magnaporthe oryzae,antifungal,13.73
+AMP_SYN_0390,ACGLWRCAKPYC,12,UniProt,Alternaria solani;Magnaporthe oryzae,antifungal,70.63
+AMP_SYN_0391,PGGHSHLCQA,10,dbAMP,Rhizoctonia solani;Sclerotinia sclerotiorum,antifungal,74.42
+AMP_SYN_0392,RPRQLSKDALPKGEQGRFKA,20,UniProt,Ralstonia solanacearum;Pseudomonas syringae,antibacterial,32.23
+AMP_SYN_0393,GECSRYFKLLCGCGKVG,17,dbAMP,Puccinia graminis,antifungal,51.94
+AMP_SYN_0394,CFTRAVWLSASAFWLRLSGCPTK,23,DRAMP,Phytophthora infestans,antifungal,16.81
+AMP_SYN_0395,WSRFADGKRPAPVACPLELTMWMGL,25,APD3,Erwinia amylovora,antibacterial,23.94
+AMP_SYN_0396,RGFVWTRAALFEKGILNKNEG,21,dbAMP,Erwinia amylovora;Ralstonia solanacearum,antibacterial,29.91
+AMP_SYN_0397,LGFWVRKKGKEWNHICVTTLPAGFTI,26,UniProt,Ralstonia solanacearum;Verticillium dahliae;Erwinia amylovora,broad-spectrum,26.85
+AMP_SYN_0398,IVGQHSGILDFMWLGLAQSCP,21,dbAMP,Fusarium oxysporum;Colletotrichum gloeosporioides;Puccinia graminis,antifungal,26.71
+AMP_SYN_0399,LYTIQGDIILGATRLKSAGAMPAR,24,DRAMP,Phytophthora infestans;Botrytis cinerea;Colletotrichum gloeosporioides,antifungal,
+AMP_SYN_0400,KPRARLVCLISTRKR,15,UniProt,Ralstonia solanacearum,antibacterial,10.81
+AMP_SYN_0401,IKFIGGPKIYQWRQKLAR,18,dbAMP,Ralstonia solanacearum,antibacterial,14.38
+AMP_SYN_0402,CMCLFWLCITLTRAKIRSAPL,21,UniProt,Colletotrichum gloeosporioides,antifungal,29.8
+AMP_SYN_0403,LGNGQKTYCCPIRDRDKYAKESKRLI,26,dbAMP,Ralstonia solanacearum;Erwinia amylovora,antibacterial,21.34
+AMP_SYN_0404,LINCLFLQKGKWVQTCL,17,UniProt,Magnaporthe oryzae;Verticillium dahliae,antifungal,
+AMP_SYN_0405,AYGEPLGAKDHLFMVGSTLGMIGL,24,dbAMP,Rhizoctonia solani;Pseudomonas syringae,broad-spectrum,10.02
+AMP_SYN_0406,ELCLNILTLWRLVFAFFW,18,DRAMP,Puccinia graminis;Xanthomonas campestris,broad-spectrum,8.36
+AMP_SYN_0407,CSKKGRGIRPHTGALFDNG,19,DRAMP,Ralstonia solanacearum;Erwinia amylovora,antibacterial,48.11
+AMP_SYN_0408,LKHAIKPQFLYWIERAKLAGCIGVLA,26,DRAMP,Phytophthora infestans;Verticillium dahliae;Fusarium oxysporum,antifungal,23.01
+AMP_SYN_0409,TVYNKKTRSA,10,APD3,Pseudomonas syringae,antibacterial,11.63
+AMP_SYN_0410,CSCKQGTGTNRG,12,UniProt,Magnaporthe oryzae;Alternaria solani;Fusarium oxysporum,antifungal,56.91
+AMP_SYN_0411,KPAFRDGEALP,11,dbAMP,Phytophthora infestans,antifungal,21.78
+AMP_SYN_0412,LCKSCWCVEC,10,DRAMP,Magnaporthe oryzae,antifungal,31.95
+AMP_SYN_0413,FICQGTNVERCAPEC,15,APD3,Phytophthora infestans,antifungal,22.27
+AMP_SYN_0414,EGPGKLHNKMSASILFPHSSFPKSSC,26,APD3,Xanthomonas campestris,antibacterial,19.44
+AMP_SYN_0415,KKGLNVGCHVDKHVEHDL,18,APD3,Erwinia amylovora;Pseudomonas syringae,antibacterial,28.35
+AMP_SYN_0416,GIHPGWVRVKKRWIAKVVWWF,21,dbAMP,Colletotrichum gloeosporioides;Fusarium oxysporum;Xanthomonas campestris,broad-spectrum,
+AMP_SYN_0417,SCHIKNFEGETKQDLRADCLIFKIKGVIG,29,UniProt,Erwinia amylovora;Ralstonia solanacearum,antibacterial,26.43
+AMP_SYN_0418,LHPWAVEFIKALIAFKAGCIEDGPKGWEIKC,31,dbAMP,Xanthomonas campestris;Erwinia amylovora,antibacterial,20.39
+AMP_SYN_0419,CKPANPKAKRCSVKRQTYC,19,DRAMP,Botrytis cinerea;Magnaporthe oryzae,antifungal,7.77
+AMP_SYN_0420,HWLFSQKAGCKIVPGHGSLEHAGNLHARGCCQ,32,APD3,Alternaria solani;Rhizoctonia solani,antifungal,54.16
+AMP_SYN_0421,VVWSLAGALQSCKQHNGIER,20,dbAMP,Xanthomonas campestris;Colletotrichum gloeosporioides;Pseudomonas syringae,broad-spectrum,38.89
+AMP_SYN_0422,YLLSPALFWGPEKA,14,APD3,Fusarium oxysporum;Sclerotinia sclerotiorum,antifungal,44.19
+AMP_SYN_0423,AICGLYGFAGAGQSLN,16,dbAMP,Fusarium oxysporum;Alternaria solani;Colletotrichum gloeosporioides,antifungal,20.04
+AMP_SYN_0424,HKKRFPPGATW,11,dbAMP,Xanthomonas campestris;Erwinia amylovora,antibacterial,54.05
+AMP_SYN_0425,GRKKDLMLIRRGRY,14,UniProt,Xanthomonas campestris;Erwinia amylovora,antibacterial,18.01
+AMP_SYN_0426,FYLEDRRIIRKLGICVW,17,UniProt,Pseudomonas syringae;Ralstonia solanacearum;Erwinia amylovora,broad-spectrum,13.43
+AMP_SYN_0427,GVDTIASRNPCLKKEAFLKCLIALDM,26,APD3,Alternaria solani;Colletotrichum gloeosporioides;Sclerotinia sclerotiorum;Ralstonia solanacearum,broad-spectrum,6.72
+AMP_SYN_0428,TDITEWVGGVFKGLYSYKCLGVDKWAAPTYTAKGQC,36,DRAMP,Erwinia amylovora;Verticillium dahliae,broad-spectrum,55.16
+AMP_SYN_0429,GISRIQKNKCDG,12,dbAMP,Magnaporthe oryzae,antifungal,67.7
+AMP_SYN_0430,IHVSFCNAVKGGGKRPLLRDGFI,23,UniProt,Magnaporthe oryzae;Phytophthora infestans;Rhizoctonia solani,antifungal,41.9
+AMP_SYN_0431,PDSCLTGFTLDAI,13,dbAMP,Erwinia amylovora;Alternaria solani;Botrytis cinerea,broad-spectrum,62.08
+AMP_SYN_0432,NLKLIVNTKKIPAFFDLQCFKLN,23,dbAMP,Pseudomonas syringae,antibacterial,28.87
+AMP_SYN_0433,NICGALLRTWALGGRPNGP,19,DRAMP,Colletotrichum gloeosporioides;Phytophthora infestans,antifungal,15.46
+AMP_SYN_0434,RRVVCGFGRK,10,DRAMP,Alternaria solani,antifungal,16.52
+AMP_SYN_0435,FCCFLFKLLTCVRFSLKARLKEKKWGT,27,DRAMP,Colletotrichum gloeosporioides;Phytophthora infestans;Rhizoctonia solani,antifungal,5.7
+AMP_SYN_0436,YWKGYKDAKGVKNLER,16,UniProt,Ralstonia solanacearum;Erwinia amylovora,antibacterial,44.31
+AMP_SYN_0437,CGLLDDRRTLDWYNSR,16,dbAMP,Alternaria solani;Magnaporthe oryzae,antifungal,17.99
+AMP_SYN_0438,GHRKKIKRIWHSY,13,dbAMP,Pseudomonas syringae,antibacterial,
+AMP_SYN_0439,GIGSGLFFKTCGGKQ,15,dbAMP,Sclerotinia sclerotiorum;Rhizoctonia solani;Puccinia graminis,antifungal,53.64
+AMP_SYN_0440,YLAAHLKGKVAYRSTLLLKGLNL,23,dbAMP,Alternaria solani,antifungal,
+AMP_SYN_0441,VKVEKKGPPGRACIIKAL,18,DRAMP,Erwinia amylovora,antibacterial,51.71
+AMP_SYN_0442,WTGLGGAACLCDKTLKNEAPSK,22,DRAMP,Alternaria solani,antifungal,50.55
+AMP_SYN_0443,ELKRRWVIGMIAGDTLRLNFSV,22,APD3,Pseudomonas syringae;Magnaporthe oryzae,broad-spectrum,29.67
+AMP_SYN_0444,CLWACHATVNFDYFVRAVWCWATTFAKFRLC,31,APD3,Colletotrichum gloeosporioides;Botrytis cinerea;Magnaporthe oryzae,antifungal,46.7
+AMP_SYN_0445,CKLRGEYSIGCKASITH,17,DRAMP,Phytophthora infestans;Puccinia graminis,antifungal,53.33
+AMP_SYN_0446,NSVAWRVATEA,11,APD3,Fusarium oxysporum;Alternaria solani,broad-spectrum,12.34
+AMP_SYN_0447,TNIIDEWWRSEVCDKGMVGGRGVATVAIL,29,DRAMP,Pseudomonas syringae;Xanthomonas campestris;Ralstonia solanacearum,broad-spectrum,
+AMP_SYN_0448,CKYTLCLNGKVCNILQK,17,APD3,Magnaporthe oryzae,antifungal,43.62
+AMP_SYN_0449,KSCNRQGLGGRGQKLKYGVGIDRTRSMSY,29,UniProt,Pseudomonas syringae,antibacterial,
+AMP_SYN_0450,GLKHMSLKFMLCGRVHVGSKLN,22,UniProt,Xanthomonas campestris;Colletotrichum gloeosporioides;Puccinia graminis,broad-spectrum,29.35
+AMP_SYN_0451,NWCFKCLGTGKYCTKIWYF,19,dbAMP,Puccinia graminis,antifungal,48.12
+AMP_SYN_0452,LRLLALLPYDDPNTFWQLWKFA,22,dbAMP,Rhizoctonia solani;Verticillium dahliae,antifungal,12.8
+AMP_SYN_0453,CWAGLGVLWAICSRSWGRNIFSAWGVCRWDKPRACGCMK,39,UniProt,Colletotrichum gloeosporioides,antifungal,16.83
+AMP_SYN_0454,DVRQTWATGMKDQTKGLCRWTGTKPKACRTRVNGNGHAQKL,41,UniProt,Erwinia amylovora,antibacterial,25.61
+AMP_SYN_0455,LTNACTNCCWGLQLSQANKK,20,APD3,Sclerotinia sclerotiorum;Fusarium oxysporum,antifungal,
+AMP_SYN_0456,LAWCVSRTGSHYGKAKYGSFR,21,DRAMP,Colletotrichum gloeosporioides;Botrytis cinerea;Erwinia amylovora,broad-spectrum,38.67
+AMP_SYN_0457,GLRSFSCQNGKEIGQHSVRWGCLVPLRLI,29,APD3,Alternaria solani;Sclerotinia sclerotiorum;Ralstonia solanacearum;Magnaporthe oryzae,broad-spectrum,
+AMP_SYN_0458,QLIVCWSVGLCYKA,14,APD3,Fusarium oxysporum;Rhizoctonia solani,antifungal,28.91
+AMP_SYN_0459,SYGFNFAGALTILLITLMVYRQ,22,dbAMP,Alternaria solani;Puccinia graminis,antifungal,27.79
+AMP_SYN_0460,LAPGSPSLCVYQLCSFHPY,19,UniProt,Verticillium dahliae;Fusarium oxysporum,antifungal,47.18
+AMP_SYN_0461,MKKWELLAHTDPAQLWQQKPWY,22,UniProt,Ralstonia solanacearum;Xanthomonas campestris,antibacterial,23.6
+AMP_SYN_0462,CLPGALQHCYLLRRG,15,DRAMP,Magnaporthe oryzae,antifungal,36.36
+AMP_SYN_0463,NKCCWLWIIPC,11,dbAMP,Magnaporthe oryzae;Sclerotinia sclerotiorum,antifungal,
+AMP_SYN_0464,KEIFYNHRLA,10,DRAMP,Puccinia graminis;Xanthomonas campestris;Botrytis cinerea;Fusarium oxysporum,broad-spectrum,13.89
+AMP_SYN_0465,AIAVLTWEMEFHT,13,APD3,Pseudomonas syringae;Ralstonia solanacearum,antibacterial,31.09
+AMP_SYN_0466,SKMWVSCWWCPLDCFDL,17,DRAMP,Colletotrichum gloeosporioides;Sclerotinia sclerotiorum;Rhizoctonia solani,antifungal,14.01
+AMP_SYN_0467,PAGCWKSAAYKTNRLTCN,18,APD3,Colletotrichum gloeosporioides;Verticillium dahliae;Sclerotinia sclerotiorum,antifungal,51.66
+AMP_SYN_0468,GCRGMIIKKGKIKRGPASECVRLEGAAWIHLSPKKTKPA,39,dbAMP,Pseudomonas syringae,antibacterial,12.35
+AMP_SYN_0469,AFFNAVFPVAGSSYYSITACGPVKLTMFV,29,UniProt,Ralstonia solanacearum;Verticillium dahliae,broad-spectrum,31.05
+AMP_SYN_0470,GVSKLMIPKNFNCV,14,UniProt,Phytophthora infestans,antifungal,8.57
+AMP_SYN_0471,GGTGRIVFCTFKAKCAICPAKI,22,APD3,Colletotrichum gloeosporioides,antifungal,25.86
+AMP_SYN_0472,RQAADTGEKVAIWKFMH,17,dbAMP,Verticillium dahliae;Pseudomonas syringae,broad-spectrum,17.01
+AMP_SYN_0473,LCWAPILMDWICCFILSR,18,DRAMP,Fusarium oxysporum;Colletotrichum gloeosporioides;Botrytis cinerea,antifungal,7.57
+AMP_SYN_0474,NVWNGLKRPLHYKVDLICNEW,21,dbAMP,Sclerotinia sclerotiorum,antifungal,50.18
+AMP_SYN_0475,CKQLFITHWKKRKIIGIQFFEFTN,24,APD3,Puccinia graminis;Sclerotinia sclerotiorum;Magnaporthe oryzae,broad-spectrum,14.78
+AMP_SYN_0476,IKLKVWTIFHVNWKWAF,17,UniProt,Sclerotinia sclerotiorum;Alternaria solani;Botrytis cinerea;Verticillium dahliae,broad-spectrum,23.75
+AMP_SYN_0477,LSDGGRRKLRLMACAAVTGCWHRWGAMGV,29,APD3,Phytophthora infestans;Botrytis cinerea,antifungal,18.08
+AMP_SYN_0478,VDILMDLKYPVYN,13,UniProt,Pseudomonas syringae,antibacterial,
+AMP_SYN_0479,KKRLYIKLKAKPHHCIEMPV,20,dbAMP,Ralstonia solanacearum,antibacterial,6.09
+AMP_SYN_0480,QWCLSAVKDTEGLVKVAGGKKARRKCLCYMRAIVIAPPHSTRIHWQLKG,49,DRAMP,Alternaria solani;Colletotrichum gloeosporioides;Botrytis cinerea,antifungal,
+AMP_SYN_0481,SSCAIDSRTAASTMDMTKTRC,21,APD3,Botrytis cinerea,antifungal,12.73
+AMP_SYN_0482,CWASFACGLKFYLEGPTAEAEFCLYPPAEGYDN,33,dbAMP,Phytophthora infestans;Puccinia graminis;Sclerotinia sclerotiorum,antifungal,51.3
+AMP_SYN_0483,SRLNWGRAAHRMSCRQARCL,20,dbAMP,Verticillium dahliae;Botrytis cinerea;Phytophthora infestans,antifungal,25.94
+AMP_SYN_0484,KRKKRGYELAHKKVTYKVKCRKAC,24,DRAMP,Magnaporthe oryzae;Sclerotinia sclerotiorum;Alternaria solani,antifungal,11.16
+AMP_SYN_0485,KSVDWFAKGFKDSTGELKK,19,DRAMP,Ralstonia solanacearum,antibacterial,48.69
+AMP_SYN_0486,AGKGFWSKAGDMPKCCGQ,18,DRAMP,Verticillium dahliae;Rhizoctonia solani,antifungal,46.5
+AMP_SYN_0487,AIGWPVVNVKGHSPV,15,APD3,Verticillium dahliae,antifungal,27.14
+AMP_SYN_0488,SGLVGVIDGLKVWQAIFRQIRKF,23,dbAMP,Pseudomonas syringae;Erwinia amylovora,antibacterial,13.71
+AMP_SYN_0489,KGVFSEVLGAVLKG,14,dbAMP,Phytophthora infestans,antifungal,23.63
+AMP_SYN_0490,FGANKIRYKIDKGWKFLGLGAAGKC,25,APD3,Sclerotinia sclerotiorum;Puccinia graminis;Ralstonia solanacearum,broad-spectrum,
+AMP_SYN_0491,GSAGLLVAQCAADLWFRYHIRKLLNIDSS,29,DRAMP,Puccinia graminis;Verticillium dahliae,antifungal,8.74
+AMP_SYN_0492,NLATFAFFDTKGRPARKPPLAL,22,dbAMP,Xanthomonas campestris;Ralstonia solanacearum,antibacterial,10.82
+AMP_SYN_0493,KSIDAMMGIISRGFVINK,18,DRAMP,Sclerotinia sclerotiorum;Puccinia graminis;Magnaporthe oryzae,antifungal,21.87
+AMP_SYN_0494,ASRTFLRSPVSIAMLVGKGFEGK,23,UniProt,Alternaria solani;Colletotrichum gloeosporioides;Botrytis cinerea,broad-spectrum,15.52
+AMP_SYN_0495,KLSNWACAAAAGAKQWCI,18,UniProt,Alternaria solani;Botrytis cinerea;Phytophthora infestans,antifungal,23.13
+AMP_SYN_0496,NGACCKWYVCNWSVWECQKVPGALAPF,27,UniProt,Rhizoctonia solani,antifungal,15.79
+AMP_SYN_0497,SIYLAARGGK,10,UniProt,Puccinia graminis,antifungal,11.32
+AMP_SYN_0498,SYALTLPSQRGCISLIV,17,UniProt,Sclerotinia sclerotiorum;Puccinia graminis;Ralstonia solanacearum;Botrytis cinerea,broad-spectrum,
+AMP_SYN_0499,IYRDPVPIWC,10,APD3,Rhizoctonia solani;Verticillium dahliae,antifungal,
+AMP_SYN_0500,VHVYDHNRTLY,11,DRAMP,Xanthomonas campestris;Ralstonia solanacearum,antibacterial,67.66
+AMP_SYN_0501,KLGLWRPRKGSIWLSFHIRCNKSVEASKCCAW,32,DRAMP,Colletotrichum gloeosporioides,antifungal,13.31
+AMP_SYN_0502,WEAGFSPAKCWNALHIGMVNLPYKHGK,27,UniProt,Verticillium dahliae;Alternaria solani,antifungal,26.29
+AMP_SYN_0503,YIWRCGCGSMCIHLK,15,DRAMP,Rhizoctonia solani;Puccinia graminis;Sclerotinia sclerotiorum,antifungal,22.63
+AMP_SYN_0504,ACTRWKKKPIV,11,APD3,Botrytis cinerea;Colletotrichum gloeosporioides;Rhizoctonia solani,antifungal,
+AMP_SYN_0505,VGDGGCDTFK,10,dbAMP,Magnaporthe oryzae;Sclerotinia sclerotiorum;Fusarium oxysporum,antifungal,10.0
+AMP_SYN_0506,EHPTFKPVCCRWLKIP,16,UniProt,Alternaria solani;Colletotrichum gloeosporioides;Botrytis cinerea,antifungal,7.73
+AMP_SYN_0507,KGLKAGWHIVVTCDLNKYIGASEILFDCPAASCNLAVCVTSEKKCI,46,APD3,Magnaporthe oryzae,antifungal,32.51
+AMP_SYN_0508,TDRKYADMIMWSIRAGIEQIKSF,23,dbAMP,Pseudomonas syringae;Xanthomonas campestris,antibacterial,18.21
+AMP_SYN_0509,KALKLPRRAGGNYHSL,16,APD3,Sclerotinia sclerotiorum;Colletotrichum gloeosporioides,antifungal,48.87
+AMP_SYN_0510,KCKHKMGGGGKGVVLHGSKIGKN,23,APD3,Ralstonia solanacearum,antibacterial,22.29
