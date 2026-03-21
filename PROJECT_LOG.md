@@ -97,6 +97,57 @@ AgroShield is an AI pipeline that **designs new antimicrobial peptides (AMPs) to
    → Produces: models/generated_candidates.csv
 ```
 
+### Phase 03: Multi-Score Ranking (`03_scoring/`)
+**What we did:** Scored all 81 generated peptide candidates across 5 dimensions to find the best ones.
+
+#### The 5 Scoring Dimensions
+
+1. **Antimicrobial Activity (weight: 35%)** — The classifier's probability that the peptide is a real AMP. Higher = more likely to kill pathogens. Our candidates range from 0.65 to 0.79.
+
+2. **Hemolytic Toxicity (weight: 25%)** — Will the peptide destroy human red blood cells? Predicted from hydrophobic moment, hydrophobicity, and charge. Lower is safer. We reject anything above 0.5. Result: **56/81 candidates are safe** (score < 0.5).
+
+3. **Phytotoxicity (weight: 15%)** — Will the peptide harm the plant it's supposed to protect? Based on length, charge, and hydrophobicity. Plant-safe peptides are short (<30 AA), moderately cationic (+2 to +6), and not too hydrophobic. Result: **all 81 candidates are plant-safe** (all below 0.5).
+
+4. **Stability (weight: 15%)** — Will the peptide survive in the environment long enough to work? Uses the **instability index** (BioPython): peptides with index < 40 are considered stable. Normalized to 0–1. Result: **54/81 are stable** (score > 0.5).
+
+5. **Synthesizability (weight: 10%)** — Can we actually manufacture this peptide? Penalizes: length > 30 AA, many cysteines (disulfide bond complexity), consecutive prolines, rare amino acids. Result: most candidates score high — they're makeable.
+
+#### Combined Score Formula
+```python
+combined = (0.35 × activity) + (0.25 × (1 − hemolytic)) +
+           (0.15 × (1 − phytotoxicity)) + (0.15 × stability) +
+           (0.10 × synthesizability)
+```
+
+#### Results Summary
+
+| Metric | Value |
+|--------|-------|
+| Total candidates scored | 81 |
+| Combined score > 0.70 (strong) | 23 |
+| Combined score > 0.60 (viable) | 76 |
+| Hemolytic-safe (< 0.5) | 56/81 |
+| Plant-safe (< 0.5) | 81/81 |
+| Stable (> 0.5) | 54/81 |
+
+#### Top 5 Candidates
+
+| Rank | ID | Sequence | Length | Combined | Activity | Hemolytic | Stability |
+|------|----|----------|--------|----------|----------|-----------|-----------|
+| 1 | GEN_0056 | RLCRIVVIRTCR | 12 | 0.78 | 0.67 | 0.39 | 0.97 |
+| 2 | GEN_0051 | KGLKFCGEQVWQVYLLKT | 18 | 0.78 | 0.68 | 0.44 | 1.00 |
+| 3 | GEN_0039 | KGLKFVGSEVWQVYLLKT | 18 | 0.76 | 0.69 | 0.47 | 1.00 |
+| 4 | GEN_0003 | LIQDCRGVRASGAQLAKIKLIGCLQF | 26 | 0.75 | 0.77 | 0.50 | 0.78 |
+| 5 | GEN_0004 | KGLKFGGSPVWQVYLLKT | 18 | 0.75 | 0.77 | 0.45 | 0.64 |
+
+**Best overall candidate: GEN_0056** — a short 12-AA peptide that's very stable, low-toxicity, easy to synthesize, and has moderate antimicrobial activity. In a real pipeline, these top 20 would go to wet-lab MIC assays to confirm actual pathogen-killing ability.
+
+#### Pipeline Execution
+```
+4. python -m 03_scoring.scripts.scoring              # ~10 sec
+   → Produces: output/scored_all.csv, output/top_candidates.csv
+```
+
 ---
 
 ## Why This Matters
@@ -122,3 +173,8 @@ AgroShield is an AI pipeline that **designs new antimicrobial peptides (AMPs) to
 | fp16 | Half-precision floating point — uses less GPU memory |
 | VRAM | Video RAM — GPU memory |
 | Pathogen | Organism that causes disease (bacteria, fungi, viruses) |
+| Hemolytic | Destroying red blood cells — a toxic side effect to avoid |
+| Phytotoxicity | Toxicity to plants — the peptide must not harm the crop it protects |
+| Instability index | Measure of protein stability in a test tube; < 40 = stable |
+| Hydrophobic moment | How unevenly hydrophobic residues are distributed on a helix — relates to membrane interaction |
+| Synthesizability | How easy/cheap it is to manufacture the peptide in a lab |

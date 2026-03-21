@@ -1432,13 +1432,13 @@ def safe_properties(sequence: str) -> dict[str, float]:
 
 
 def data_metrics(results: pd.DataFrame) -> dict[str, float]:
-    top_display = scale_values(results.head(5)["combined_score"].tolist())
-    avg_display = round(sum(top_display) / len(top_display), 2) if top_display else 0.78
+    top_scores = results.head(5)["combined_score"].tolist()
+    avg_score = round(sum(top_scores) / len(top_scores), 2) if top_scores else 0.0
     return {
-        "count": float(min(len(results), 20)),
-        "best": max(top_display) if top_display else 0.92,
-        "avg": max(avg_display, 0.78),
-        "length": 18.5,
+        "count": float(len(results)),
+        "best": max(top_scores) if top_scores else 0.0,
+        "avg": avg_score,
+        "length": round(results["length"].mean(), 1),
     }
 
 
@@ -1541,20 +1541,22 @@ def render_distributions(results: pd.DataFrame) -> str:
             f'</div>'
         )
 
-    return row("Sequence Length (aa)", length_heights, "μ = 24.5") + row("Net Charge (pH 7.0)", charge_heights, "μ = +6.2")
+    mean_length = f"μ = {results['length'].mean():.1f}"
+    mean_charge = f"μ = {'+' if results['charge'].mean() > 0 else ''}{results['charge'].mean():.1f}"
+    return row("Sequence Length (aa)", length_heights, mean_length) + row("Net Charge (pH 7.0)", charge_heights, mean_charge)
 
 
 def render_score_bars(results: pd.DataFrame) -> str:
     top = results.head(7).copy()
-    display = scale_values(top["combined_score"].tolist(), low=0.42, high=0.82)
     rows = []
     for idx, (_, row) in enumerate(top.iterrows()):
-        label = f"AMP-{idx + 704}"
+        label = str(row["id"])
+        score = float(row["combined_score"])
         rows.append(
             f'<div class="bar-row">'
             f'<span>{label}</span>'
-            f'<div class="bar-track"><div class="bar-fill" style="width:{display[idx] * 100:.0f}%"></div></div>'
-            f'<span>{display[idx]:.1f}</span>'
+            f'<div class="bar-track"><div class="bar-fill" style="width:{score * 100:.0f}%"></div></div>'
+            f'<span>{score:.2f}</span>'
             f'</div>'
         )
     return f'<div class="bar-list">{"".join(rows)}</div>'
@@ -1577,7 +1579,7 @@ def render_heatmap(results: pd.DataFrame) -> str:
     header = '<div></div>' + "".join(f'<div class="heat-head">{label}</div>' for _, label in cols)
     rows = [header]
     for idx, (_, row) in enumerate(top.iterrows()):
-        label = f"AMP-{704 - idx if idx < 3 else 233 - (idx - 3) * 221}"
+        label = str(row["id"])
         cells = "".join(
             f'<div class="heat-cell" style="background:{heat_color(float(row[col]))};"></div>' for col, _ in cols
         )
@@ -1841,11 +1843,10 @@ def render_landing(pathogen_map: dict) -> None:
 def render_results(results: pd.DataFrame, pathogen_name: str) -> None:
     metrics = data_metrics(results)
     top = results.head(5).copy()
-    scaled = scale_values(top["combined_score"].tolist())
     rows = []
     code = pathogen_code(pathogen_name)
     for idx, (_, row) in enumerate(top.iterrows()):
-        combined = scaled[idx]
+        combined = float(row["combined_score"])
         rows.append(
             f'<div class="results-grid-row">'
             f'<div class="id-cell">AMP-{code}-{idx + 1:03d}</div>'
@@ -1871,7 +1872,7 @@ def render_results(results: pd.DataFrame, pathogen_name: str) -> None:
             </p>
         </div>
         <div class="metric-grid four">
-            <div class="metric-card"><div class="metric-label">Candidate Count</div><div class="metric-value">{int(metrics['count'])}<span class="metric-inline">+14%</span></div></div>
+            <div class="metric-card"><div class="metric-label">Candidate Count</div><div class="metric-value">{int(metrics['count'])}<span class="metric-inline">Curated</span></div></div>
             <div class="metric-card"><div class="metric-label">Best Score</div><div class="metric-value">{metrics['best']:.2f}<span class="metric-inline">Top Tier</span></div></div>
             <div class="metric-card"><div class="metric-label">Average Score</div><div class="metric-value">{metrics['avg']:.2f}<span class="metric-inline">▁</span></div></div>
             <div class="metric-card"><div class="metric-label">Avg. Length</div><div class="metric-value">{metrics['length']:.1f}<span class="metric-inline" style="color:#8ca0b2;">Amino Acids</span></div></div>
@@ -1907,8 +1908,13 @@ def render_results(results: pd.DataFrame, pathogen_name: str) -> None:
 
 
 def render_analysis(results: pd.DataFrame, pathogen_name: str) -> None:
-    scanned = max(12408, len(results) * 620)
-    confidence = max(94.8, round(results["combined_score"].head(20).mean() * 120, 1))
+    from components.pipeline import generated_candidates_count
+    scanned = generated_candidates_count() or len(results) * 620
+    confidence = round(results["combined_score"].head(5).mean() * 100, 1)
+    top3_ids = results.head(3)["id"].tolist()
+    legend_0 = f'{top3_ids[0]} (Lead)' if len(top3_ids) > 0 else 'N/A'
+    legend_1 = str(top3_ids[1]) if len(top3_ids) > 1 else 'N/A'
+    legend_2 = str(top3_ids[2]) if len(top3_ids) > 2 else 'N/A'
     markup = (
         f'<div class="analysis-top">'
         f'<div>'
@@ -1928,9 +1934,9 @@ def render_analysis(results: pd.DataFrame, pathogen_name: str) -> None:
         f'</div>'
         f'{svg_radar(results)}'
         f'<div class="chart-legend">'
-        f'<span><span class="legend-dot" style="background:#0d4a35;"></span>AMP-704 (Lead)</span>'
-        f'<span><span class="legend-dot" style="background:#62857a;"></span>AMP-812</span>'
-        f'<span><span class="legend-dot" style="background:#a8bac0;"></span>AMP-459</span>'
+        f'<span><span class="legend-dot" style="background:#0d4a35;"></span>{legend_0}</span>'
+        f'<span><span class="legend-dot" style="background:#62857a;"></span>{legend_1}</span>'
+        f'<span><span class="legend-dot" style="background:#a8bac0;"></span>{legend_2}</span>'
         f'</div>'
         f'</div>'
         f'<div class="panel"><p class="panel-title">Property Distributions</p><p class="panel-copy">Sequence-wide physical profiles</p>{render_distributions(results)}</div>'
@@ -2046,18 +2052,18 @@ def render_about() -> None:
                 <div>Primary Engine</div>
                 <div>Output</div>
             </div>
-            <div class="pipeline-grid-row"><div class="phase">01 Discovery</div><div>Generative de novo sequence creation</div><div>GAN / Transformer Models</div><div><span class="tag">New Raw Sequences</span></div></div>
-            <div class="pipeline-grid-row"><div class="phase">02 Scoring</div><div>Physicochemical and biological prediction</div><div>Ensemble Classifiers</div><div><span class="tag">Ranked Candidates</span></div></div>
-            <div class="pipeline-grid-row"><div class="phase">03 Filtering</div><div>Toxicity and metabolic stability thresholding</div><div>Deep Neural Networks</div><div><span class="tag">50-100 Top Hits</span></div></div>
-            <div class="pipeline-grid-row"><div class="phase">04 3D Modeling</div><div>Tertiary structure and docking simulation</div><div>AlphaFold2 / PyRosetta</div><div><span class="tag">PDB Structures</span></div></div>
+            <div class="pipeline-grid-row"><div class="phase">01 Discovery</div><div>Mutation + embedding-space interpolation</div><div>ESM-2 (3B) + RandomForest</div><div><span class="tag">841K Raw Sequences</span></div></div>
+            <div class="pipeline-grid-row"><div class="phase">02 Scoring</div><div>Physicochemical and biological prediction</div><div>RandomForest Classifier</div><div><span class="tag">Ranked Candidates</span></div></div>
+            <div class="pipeline-grid-row"><div class="phase">03 Filtering</div><div>Toxicity and metabolic stability thresholding</div><div>Feature-based Heuristics</div><div><span class="tag">13 Curated Candidates</span></div></div>
+            <div class="pipeline-grid-row"><div class="phase">04 3D Modeling</div><div>Tertiary structure visualization</div><div>py3Dmol / Helix Prediction</div><div><span class="tag">3D Structures</span></div></div>
         </div>
         <div class="weights-grid">
             <div>
                 <p class="panel-title" style="font-size:18px;">Scoring Dimension Weights</p>
                 <div class="weight-list">
-                    <div class="weight-row"><span>Antimicrobial Activity</span><span>40%</span><div class="weight-track"><div class="weight-fill" style="width:40%;"></div></div></div>
-                    <div class="weight-row"><span>Hemolytic Potential</span><span>15%</span><div class="weight-track"><div class="weight-fill" style="width:15%;"></div></div></div>
-                    <div class="weight-row"><span>Plant Toxicity</span><span>20%</span><div class="weight-track"><div class="weight-fill" style="width:20%;"></div></div></div>
+                    <div class="weight-row"><span>Antimicrobial Activity</span><span>35%</span><div class="weight-track"><div class="weight-fill" style="width:35%;"></div></div></div>
+                    <div class="weight-row"><span>Hemolytic Potential</span><span>25%</span><div class="weight-track"><div class="weight-fill" style="width:25%;"></div></div></div>
+                    <div class="weight-row"><span>Plant Toxicity</span><span>15%</span><div class="weight-track"><div class="weight-fill" style="width:15%;"></div></div></div>
                     <div class="weight-row"><span>Proteolytic Stability</span><span>15%</span><div class="weight-track"><div class="weight-fill" style="width:15%;"></div></div></div>
                     <div class="weight-row"><span>Synthesizability</span><span>10%</span><div class="weight-track"><div class="weight-fill" style="width:10%;"></div></div></div>
                 </div>
@@ -2067,8 +2073,8 @@ def render_about() -> None:
                 <div class="stack-grid">
                     <div class="stack-card"><strong>Streamlit</strong><span>Interface Engine</span></div>
                     <div class="stack-card"><strong>PyTorch</strong><span>Model Runtime</span></div>
-                    <div class="stack-card"><strong>AlphaFold2</strong><span>Structure Prediction</span></div>
-                    <div class="stack-card"><strong>RDKit</strong><span>Cheminformatics</span></div>
+                    <div class="stack-card"><strong>ESM-2 (3B)</strong><span>Protein Embeddings</span></div>
+                    <div class="stack-card"><strong>modlAMP</strong><span>Peptide Analysis</span></div>
                 </div>
             </div>
         </div>

@@ -14,6 +14,14 @@ PATHOGEN_MAP_PATH = ROOT / "01_data" / "data" / "processed" / "pathogen_crop_map
 AMPS_PATH = ROOT / "01_data" / "data" / "processed" / "amps_unified.csv"
 SCORED_ALL_PATH = ROOT / "03_scoring" / "output" / "scored_all.csv"
 TOP_CANDIDATES_PATH = ROOT / "03_scoring" / "output" / "top_candidates.csv"
+GENERATED_CANDIDATES_PATH = ROOT / "02_model" / "models" / "generated_candidates.csv"
+
+
+def generated_candidates_count() -> int:
+    if GENERATED_CANDIDATES_PATH.exists():
+        with open(GENERATED_CANDIDATES_PATH) as f:
+            return sum(1 for _ in f) - 1
+    return 0
 
 
 def load_pathogen_map() -> dict:
