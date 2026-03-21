@@ -10,8 +10,8 @@ from transformers import AutoModel, AutoTokenizer
 
 DATA_DIR = Path(__file__).resolve().parent.parent.parent / "01_data" / "data" / "processed"
 MODELS_DIR = Path(__file__).resolve().parent.parent / "models"
-MODEL_NAME = "facebook/esm2_t48_15B_UR50D"
-EMBEDDING_DIM = 5120
+MODEL_NAME = "facebook/esm2_t36_3B_UR50D"
+EMBEDDING_DIM = 2560
 BATCH_SIZE = 8
 CACHE_FILE = "embeddings_cache.npz"
 
