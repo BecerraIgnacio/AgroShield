@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+*.joblib
+*.npz
+*.pt
+*.pth
+models/*.joblib
+models/*.npz
+data/raw/
+.streamlit/secrets.toml
+.env
+*.log
+.DS_Store
+results/*.png
