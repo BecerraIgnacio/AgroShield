@@ -1028,7 +1028,7 @@ def main():
     log.info(f"Device: {CFG.device}")
     if torch.cuda.is_available():
         log.info(f"GPU: {torch.cuda.get_device_name()}")
-        log.info(f"VRAM: {torch.cuda.get_device_properties(0).total_mem / 1e9:.1f} GB")
+        log.info(f"VRAM: {torch.cuda.get_device_properties(0).total_memory / 1e9:.1f} GB")
     log.info(f"Config: {CFG}")
     log.info("")
 
