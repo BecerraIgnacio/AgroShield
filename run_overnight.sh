@@ -37,7 +37,7 @@ python3 -c "import torch; print(f'CUDA: {torch.cuda.is_available()}, GPU: {torch
 # Install any missing deps (won't break existing ones)
 echo ""
 echo "Checking dependencies..."
-pip install --quiet --upgrade transformers torch scikit-learn biopython modlamp pandas numpy scipy 2>/dev/null || true
+pip install --quiet --upgrade transformers torch scikit-learn biopython modlamp pandas numpy scipy requests 2>/dev/null || true
 
 # Run the training
 echo ""
