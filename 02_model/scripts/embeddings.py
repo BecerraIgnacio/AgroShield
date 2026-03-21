@@ -32,7 +32,7 @@ def get_esm2_model(model_name: str = MODEL_NAME) -> tuple:
     device = detect_device()
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     dtype = torch.float16 if device == "cuda" else torch.float32
-    model = AutoModel.from_pretrained(model_name, dtype=dtype)
+    model = AutoModel.from_pretrained(model_name, torch_dtype=dtype, use_safetensors=True)
     model.eval()
     model.to(device)
     return tokenizer, model
