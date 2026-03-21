@@ -7,3 +7,4 @@
 /04_app/__pycache__/
 /04_app/**/*.pyc
 /04_app/.DS_Store
+02_model/models/generated_candidates_v2.csv
