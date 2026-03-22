@@ -198,7 +198,7 @@ function navMarkup() {
       <nav class="site-nav">
         ${items.map(([label, href]) => `<a href="${href}">${label}</a>`).join('')}
       </nav>
-      <a class="nav-cta" href="#contact">Request Partnership</a>
+      <button class="nav-cta" type="button" data-contact-open>Request Partnership</button>
     </header>
   `;
 }
@@ -222,7 +222,7 @@ function heroMarkup() {
               companies and agri-biotech labs.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#contact">Request Partnership</a>
+              <button class="button button-primary" type="button" data-contact-open>Request Partnership</button>
               <a class="button button-secondary" href="#platform">Explore Methodology</a>
             </div>
           </div>
@@ -479,10 +479,60 @@ function ctaMarkup() {
           experimental validation, and production-scale deployment.
         </p>
         <div class="hero-actions cta-actions">
-          <a class="button button-dark" href="mailto:partners@agroshield.bio">Contact AgroShield</a>
+          <button class="button button-dark" type="button" data-contact-open>Contact AgroShield</button>
         </div>
       </div>
     </section>
+  `;
+}
+
+function contactModalMarkup() {
+  return `
+    <div class="contact-modal" aria-hidden="true">
+      <div class="contact-modal-backdrop" data-contact-close></div>
+      <div class="contact-island" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+        <button class="contact-close" type="button" aria-label="Close partnership form" data-contact-close>Close</button>
+        <div class="mini-eyebrow">Partnership Inquiry</div>
+        <h3 id="contact-title">Start a Crop Protection Program.</h3>
+        <p class="contact-copy">
+          This is a prototype intake form for partnership, pilot, and validation conversations.
+        </p>
+        <form class="contact-form" data-contact-form>
+          <label class="contact-field">
+            <span>Full name</span>
+            <input type="text" name="name" placeholder="Dr. Elena Ruiz" />
+          </label>
+          <label class="contact-field">
+            <span>Work email</span>
+            <input type="email" name="email" placeholder="elena@company.com" />
+          </label>
+          <label class="contact-field">
+            <span>Organization</span>
+            <input type="text" name="organization" placeholder="Crop protection company or agri-biotech lab" />
+          </label>
+          <label class="contact-field">
+            <span>Program focus</span>
+            <select name="focus">
+              <option>Pathogen-specific discovery</option>
+              <option>Wet-lab validation</option>
+              <option>Scale-up and bioproduction</option>
+              <option>Strategic partnership</option>
+            </select>
+          </label>
+          <label class="contact-field contact-field-wide">
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us which crops, pathogens, or validation goals matter most to your team."></textarea>
+          </label>
+          <div class="contact-actions">
+            <button class="button button-primary" type="submit">Submit Inquiry</button>
+            <span class="contact-note">Mockup only. No data is being sent.</span>
+          </div>
+          <div class="contact-success" hidden>
+            Partnership request staged. In a production flow, this would route to the AgroShield deal pipeline.
+          </div>
+        </form>
+      </div>
+    </div>
   `;
 }
 
@@ -519,6 +569,7 @@ function render() {
       ${marketMarkup()}
       ${ctaMarkup()}
       ${footerMarkup()}
+      ${contactModalMarkup()}
     </div>
   `;
 }
@@ -534,6 +585,7 @@ function bindMotion() {
   const noise = document.querySelector('.site-noise');
   const sections = gsap.utils.toArray('.snap-section');
   const navLinks = [...document.querySelectorAll('.site-nav a')];
+  const isModalOpen = () => document.body.classList.contains('modal-open');
   const sectionTargets = navLinks
     .map((link) => {
       const href = link.getAttribute('href');
@@ -696,11 +748,13 @@ function bindMotion() {
       wheelSpeed: 1,
       tolerance: 14,
       onDown: () => {
+        if (isModalOpen()) return;
         syncSectionIndex();
         if (scrollWithinSection(1)) return;
         goToSection(currentSection + 1);
       },
       onUp: () => {
+        if (isModalOpen()) return;
         syncSectionIndex();
         if (scrollWithinSection(-1)) return;
         goToSection(currentSection - 1);
@@ -710,6 +764,7 @@ function bindMotion() {
     window.addEventListener(
       'keydown',
       (event) => {
+        if (isModalOpen()) return;
         if (event.key === 'ArrowDown' || event.key === 'PageDown' || event.key === ' ') {
           event.preventDefault();
           syncSectionIndex();
@@ -728,6 +783,62 @@ function bindMotion() {
 }
 
 function bindEvents() {
+  const modal = document.querySelector('.contact-modal');
+  const island = document.querySelector('.contact-island');
+  const success = document.querySelector('.contact-success');
+  const form = document.querySelector('[data-contact-form]');
+  const openModal = () => {
+    if (!modal || !island) return;
+    document.body.classList.add('modal-open');
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    if (success) success.hidden = true;
+    form?.reset();
+    gsap.fromTo(
+      island,
+      { y: 26, autoAlpha: 0, scale: 0.985 },
+      { y: 0, autoAlpha: 1, scale: 1, duration: 0.45, ease: 'power3.out' },
+    );
+  };
+
+  const closeModal = () => {
+    if (!modal || !island || !modal.classList.contains('is-open')) return;
+    gsap.to(island, {
+      y: 18,
+      autoAlpha: 0,
+      scale: 0.988,
+      duration: 0.28,
+      ease: 'power2.in',
+      onComplete: () => {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+      },
+    });
+  };
+
+  document.querySelectorAll('[data-contact-open]').forEach((trigger) => {
+    trigger.addEventListener('click', (event) => {
+      event.preventDefault();
+      openModal();
+    });
+  });
+
+  document.querySelectorAll('[data-contact-close]').forEach((trigger) => {
+    trigger.addEventListener('click', closeModal);
+  });
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (success) success.hidden = false;
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeModal();
+    }
+  });
+
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (event) => {
       const href = link.getAttribute('href');
