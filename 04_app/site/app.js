@@ -673,8 +673,12 @@ function bindMotion() {
   if (window.matchMedia('(min-width: 960px) and (prefers-reduced-motion: no-preference)').matches) {
     let currentSection = 0;
     let isAnimating = false;
+    let currentTween = null;
+    let lastGestureAt = 0;
     const headerOffset = 82;
     const boundarySlack = 18;
+    const gestureCooldown = 520;
+    const minWheelDelta = 18;
 
     const syncSectionIndex = () => {
       const scrollY = window.scrollY + headerOffset + window.innerHeight * 0.2;
@@ -695,9 +699,32 @@ function bindMotion() {
       return { minY, maxY, usableHeight, isTall };
     };
 
+    const animateWindowScroll = (y, duration, ease = 'power2.out') => {
+      if (currentTween) {
+        currentTween.kill();
+      }
+
+      isAnimating = true;
+      currentTween = gsap.to(window, {
+        duration,
+        ease,
+        overwrite: 'auto',
+        scrollTo: { y, autoKill: false },
+        onComplete: () => {
+          currentTween = null;
+          isAnimating = false;
+        },
+        onInterrupt: () => {
+          currentTween = null;
+          isAnimating = false;
+        },
+      });
+    };
+
     const scrollWithinSection = (direction) => {
       const section = sections[currentSection];
       if (!section) return false;
+      if (isAnimating) return true;
 
       const { minY, maxY, usableHeight, isTall } = getSectionWindow(section);
       if (!isTall) return false;
@@ -705,20 +732,12 @@ function bindMotion() {
       const currentY = window.scrollY;
 
       if (direction > 0 && currentY < maxY - boundarySlack) {
-        gsap.to(window, {
-          duration: 0.72,
-          ease: 'power2.out',
-          scrollTo: { y: Math.min(currentY + usableHeight * 0.88, maxY), autoKill: false },
-        });
+        animateWindowScroll(Math.min(currentY + usableHeight * 0.88, maxY), 0.68);
         return true;
       }
 
       if (direction < 0 && currentY > minY + boundarySlack) {
-        gsap.to(window, {
-          duration: 0.72,
-          ease: 'power2.out',
-          scrollTo: { y: Math.max(currentY - usableHeight * 0.88, minY), autoKill: false },
-        });
+        animateWindowScroll(Math.max(currentY - usableHeight * 0.88, minY), 0.68);
         return true;
       }
 
@@ -728,36 +747,27 @@ function bindMotion() {
     const goToSection = (index) => {
       const nextIndex = gsap.utils.clamp(0, sections.length - 1, index);
       if (isAnimating || nextIndex === currentSection) return;
-      isAnimating = true;
       currentSection = nextIndex;
-
-      gsap.to(window, {
-        duration: 1.05,
-        ease: 'expo.inOut',
-        scrollTo: { y: sections[nextIndex], offsetY: 82, autoKill: false },
-        onComplete: () => {
-          isAnimating = false;
-        },
-      });
+      animateWindowScroll(sections[nextIndex], 0.95, 'expo.out');
     };
 
     Observer.create({
       target: window,
-      type: 'wheel,touch,pointer',
+      type: 'wheel',
       preventDefault: true,
       wheelSpeed: 1,
       tolerance: 14,
-      onDown: () => {
-        if (isModalOpen()) return;
+      debounce: true,
+      onChangeY: ({ deltaY }) => {
+        if (isModalOpen() || isAnimating || Math.abs(deltaY) < minWheelDelta) return;
+        const now = Date.now();
+        if (now - lastGestureAt < gestureCooldown) return;
+        lastGestureAt = now;
+
+        const direction = deltaY > 0 ? 1 : -1;
         syncSectionIndex();
-        if (scrollWithinSection(1)) return;
-        goToSection(currentSection + 1);
-      },
-      onUp: () => {
-        if (isModalOpen()) return;
-        syncSectionIndex();
-        if (scrollWithinSection(-1)) return;
-        goToSection(currentSection - 1);
+        if (scrollWithinSection(direction)) return;
+        goToSection(currentSection + direction);
       },
     });
 
