@@ -27,24 +27,24 @@ async function capture(page, filename) {
   await page.setViewport({ width: 1600, height: 900, deviceScaleFactor: 1 });
   await page.goto(APP_URL, { waitUntil: 'networkidle0', timeout: 60000 });
   await wait(1200);
+  await page.evaluate(() => window.scrollTo(0, 0));
 
-  await capture(page, 'landing.png');
+  await capture(page, 'home-desktop-full.png');
 
-  await page.click('[data-action="generate"]');
-  await wait(900);
-  await capture(page, 'results.png');
+  await page.setViewport({ width: 1440, height: 1600, deviceScaleFactor: 1 });
+  await page.evaluate(() => {
+    const hero = document.querySelector('.hero-section');
+    if (hero) {
+      hero.scrollIntoView({ behavior: 'instant', block: 'start' });
+    }
+  });
+  await wait(400);
+  await capture(page, 'home-desktop-hero.png');
 
-  await page.click('[data-tab="analysis"]');
-  await wait(350);
-  await capture(page, 'analysis.png');
-
-  await page.click('[data-tab="structure"]');
-  await wait(350);
-  await capture(page, 'structure.png');
-
-  await page.click('[data-tab="about"]');
-  await wait(350);
-  await capture(page, 'about.png');
+  await page.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true });
+  await page.goto(APP_URL, { waitUntil: 'networkidle0', timeout: 60000 });
+  await wait(1200);
+  await capture(page, 'home-mobile-full.png');
 
   await browser.close();
 })();
